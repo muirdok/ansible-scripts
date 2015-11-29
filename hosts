@@ -1,0 +1,12 @@
+[test]
+localhost ansible_connection=local
+
+[win]
+192.168.202.1
+
+[ilumos]
+
+[solaris]
+
+[centos]
+10.3.70.115

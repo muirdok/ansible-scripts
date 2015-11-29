@@ -1,0 +1,17 @@
+---
+# tasks file for vdbench
+- name: Create THE Folder
+  file: path=./VDBench state=directory mode=0777
+- name: Copy config
+  template: src=vdb.conf.j2 dest=./VDBench/vdb.conf 
+- name: Unzip vdb to folder
+  unarchive: src=vdbench50403.zip dest=./VDBench/
+- name: Run IO
+  command: /bin/sleep 45
+  async: 45
+  poll: 0
+#- name: Copy script
+#  template: src=runme.sh.j2 dest=/root/runme.sh owner=root group=root mode=0777
+
+
+
