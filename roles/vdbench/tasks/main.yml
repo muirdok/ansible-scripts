@@ -3,15 +3,34 @@
 - name: Create THE Folder
   file: path=./VDBench state=directory mode=0777
 - name: Copy config
-  template: src=vdb.conf.j2 dest=./VDBench/vdb.conf 
+  template: src=vdb.conf.j2 dest={{ vdpath }}/vdb.conf 
 - name: Unzip vdb to folder
-  unarchive: src=vdbench50403.zip dest=./VDBench/
+  unarchive: src=vdbench50403.zip dest={{ vdpath }}
 - name: Run IO
-  command: /bin/sleep 45
-  async: 45
-  poll: 0
+  shell: "cygstart --hide {{ vdb }} -f {{ vconf }}"
+
+#- name: Run IO
+#  command: "{{ vdpath }}{{ vdb }} -f {{ vdpath }}{{ vconf }}"
+#- name: Check PATH
+#  command: "pwd"
+#  async: 45
+#  poll: 0
+#  register: command_out
+#- name: debug
+#  debug: var=command_out.stdout_lines
+#- name: Run IO
+#  command: "{{ vdpath }}{{ vdb }} -f {{ vdpath }}{{ vconf }}"
+#  register: command_out_vdb
+#  async: 45
+#  poll: 0
+#- name: debug
+#  debug: var=command_out_vdb.stdout_lines
 #- name: Copy script
 #  template: src=runme.sh.j2 dest=/root/runme.sh owner=root group=root mode=0777
-
-
+#- name: debug vpath
+#  debug: var=vdpath
+#- name: debug vconf
+#  debug: var=vconf
+#- name: debug vdb
+#  debug: var=vdb
 

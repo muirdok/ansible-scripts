@@ -8,5 +8,5 @@ localhost ansible_connection=local
 
 [solaris]
 
-[centos]
-10.3.70.115
+[linux]
+#10.3.70.115

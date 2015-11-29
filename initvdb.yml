@@ -1,9 +1,8 @@
 ---
 - hosts: 
-   - test
    - win
   user: root
   roles:
    - test
-   - vdbench
+   - {role: vdbench, vdb: "./VDBench/vdbench.bat", vconf: "./VDBench/vdb.conf", vdpath: "./VDBench/"}
 
