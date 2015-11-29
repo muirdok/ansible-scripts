@@ -1,0 +1,16 @@
+---
+# tasks file for vdbench
+- assert:
+   that:
+    - vconf != ""
+    - vdarch != ""
+    - vdpath != ""
+    - vdb != ""
+- name: Create THE Folder
+  file: path={{ vdpath }} state=directory mode=0777
+- name: Copy config
+  template: src={{ vconf }}.j2 dest={{ vdpath }}{{ vconf }} 
+- name: Unzip vdb to folder
+  unarchive: src={{vdarch}} dest={{ vdpath }}
+- name: Run IO
+  shell: "cygstart --hide {{ vdpath }}{{ vdb }} -f {{ vdpath }}{{ vconf }}"
