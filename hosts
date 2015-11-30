@@ -12,3 +12,10 @@ localhost ansible_connection=local
 
 [linux]
 10.3.70.115
+
+[vsphere]
+10.3.53.123
+
+[esx]
+10.3.70.13
+10.3.70.16
