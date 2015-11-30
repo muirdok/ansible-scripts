@@ -5,28 +5,28 @@
   vars:
     dstpath: "/root/"
   roles:
-   - {role: vdbench_lin, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdbench50403.tar.gz"}
+   - {role: vdbench_lin, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
 - hosts:
    - win
   user: root
   vars:
     dstpath: "/home/root/"
   roles:
-   - {role: vdbench_win, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdbench50403.tar.gz"}
+   - {role: vdbench_win, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
 - hosts:
    - ilumos
   user: root
   vars:
     dstpath: "/root/"
   roles:
-   - {role: vdbench_nex, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdbench50403.tar.gz"}
+   - {role: vdbench_nex, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
 - hosts:
    - solaris
   user: root
   vars:
     dstpath: "/root/"
   roles:
-   - {role: vdbench_sol, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdbench50403.tar.gz"}
+   - {role: vdbench_sol, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
 
 
 
