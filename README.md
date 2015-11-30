@@ -1,24 +1,27 @@
 # ansible-scripts
 for >= ansible 1.9.4
 
-==Plan for deploys
+== Plan for deploys
 
-===Deploying
-*1) Deploy vm on ESX
-*2) Deploy vm on XEN
+=== Deploying
 
-===Configuring
-*1) Configure win
-*2) Configure lin
-*3) Configure solaris
-*4) Configure ilumos
+* Deploy vm on ESX
+* Deploy vm on XEN
 
-===Mounting
-*1) Mounting cifs
-*2) Mounting nfs
+=== Configuring
 
-===Conf\Run VDBench
-*1) Deploy vdbench for CIFS
-*2) Deploy vdbench for NFS
-*3) Deploy vdbench for local
+* Configure win
+* Configure lin
+* Configure solaris
+* Configure ilumos
+
+=== Mounting
+* Mounting cifs
+* Mounting nfs
+
+=== Conf\Run VDBench
+
+* Deploy vdbench for CIFS
+* Deploy vdbench for NFS
+* Deploy vdbench for local
 
