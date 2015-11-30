@@ -8,6 +8,7 @@ localhost ansible_connection=local
 10.3.70.190
 
 [solaris]
+10.3.70.113
 
 [linux]
 10.3.70.115
