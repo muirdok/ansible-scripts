@@ -9,7 +9,7 @@
 - name: Create THE Folder
   file: path={{ vdpath }} state=directory mode=0777
 - name: Copy config
-  template: src={{ vconf }}.j2 dest={{ vdpath }}{{ vconf }} 
+  template: src=../../common/templates/{{ vconf }}.j2 dest={{ vdpath }}{{ vconf }}
 - name: Unzip vdb to folder
   unarchive: src={{vdarch}} dest={{ vdpath }}
 - name: Run IO
