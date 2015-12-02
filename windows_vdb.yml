@@ -2,7 +2,6 @@
 - hosts:
    - win
   user: root
-  vars:
-    dstpath: "./VDBench/"
   roles:
-   - {role: vdbench_win, vdb: "vdbench.bat", vconf: "vdb.conf", vdpath: "./VDBench/", vdarch: "../../common/files/vdb.zip"}
+   - {role: vdbench_win, "vars_file": "vdbvars.yml"}
+

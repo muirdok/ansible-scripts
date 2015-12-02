@@ -3,5 +3,9 @@
 - name: Install java
   apt: name=openjdk-7-jre state=latest
 - name: Install csh
-  apt: name=csh state=latest
+  apt: name=csh state=latesta
+- name: Install nfs
+  apt: name=nfs-common state=latest
+
+
 
