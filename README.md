@@ -25,3 +25,12 @@ for >= ansible 1.9.4
 * Deploy vdbench for NFS
 * Deploy vdbench for local
 
+On Windows clients:
+- openssh server
+- python
+- ssh-bindings with ansible host
+
+On nix client:
+- openssh server
+- ssh bindings with ansible host
+
