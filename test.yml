@@ -1,0 +1,13 @@
+---
+- hosts:
+   - test
+  user: root
+  vars:
+    dstpath: "/root/"
+#  roles:
+#   - {role: vdbench_lin, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
+  tasks:
+   - name: check the proccess
+     shell: ps aux | grep java
+
+

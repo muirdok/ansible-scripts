@@ -3,6 +3,6 @@
    - win
   user: root
   vars:
-    dstpath: "./"
+    dstpath: "./VDBench/"
   roles:
-   - {role: vdbench_win, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
+   - {role: vdbench_win, vdb: "vdbench.bat", vconf: "vdb.conf", vdpath: "./VDBench/", vdarch: "../../common/files/vdb.zip"}

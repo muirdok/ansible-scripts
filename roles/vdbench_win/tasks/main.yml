@@ -8,10 +8,10 @@
     - vdb != ""
     - vdpath != ""
 - name: Create THE Folder
-  file: path="./VDBench" state=directory mode=0777
+  file: path="{{ vdpath }}" state=directory mode=0777
 - name: Copy config
-  template: src=vdb.conf.j2 dest="./VDBench/vdb.conf"
+  template: src="../../common/templates/{{ vconf }}.j2" dest="{{ vdpath }}{{ vconf }}"
 - name: Unzip vdb to folder
-  unarchive: src=vdb.zip dest="./VDBench/"
+  unarchive: src="{{ vdarch }}" dest="{{ vdpath }}"
 - name: Run IO
-  shell: "cygstart --hide ./VDBench/vdbench.bat -f ./VDBench/vdb.conf"
+  shell: "cygstart --hide {{ vdpath }}{{ vdb }} -f {{ vdpath }}{{ vconf }}"
