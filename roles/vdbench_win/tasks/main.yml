@@ -8,13 +8,13 @@
     - vdbbat != ""
     - vdpath != ""
 - name: Mount CIFS share dstpathwin
-  shell: "net use X: \\\\{{vip2}}\\{{dstpathwin}}{{inventory_hostname}} /user:smb\\nexenta"
+  shell: "net use X: \\\\{{vip3}}\\{{testvolume}}_{{inventory_hostname}} /user:smb\\nexenta"
 - name: Create THE Folder
   file: path="{{ vdpath }}" state=directory mode=0777
 - name: Copy config
-  template: src=""../../common/templates/{{ vconf }}.j2" dest="{{ vdpath }}{{ vconf }}""
+  template: src=""../../common/templates/{{ vconf }}w.j2" dest="{{ vdpath }}{{ vconf }}""
 - name: Unzip vdb to folder
-  unarchive: src="{{ vdarch }}" dest="{{ vdpath }}"
+  unarchive: src="{{vdarchz}}" dest="{{vdpath}}"
 - name: Run IO
   shell: "cygstart --hide {{ vdpath }}{{ vdb }} -f {{ vdpath }}{{ vconf }}"
 

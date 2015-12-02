@@ -1,6 +1,6 @@
 ---
 - hosts:
-   - win
+   - test
   user: root
   roles:
    - {role: vdbench_win, "vars_file": "vdbvars.yml"}

@@ -10,6 +10,8 @@ dstpath: "/root/"
 dstpathwin: "/cygdrive/x/"
 vip1: "192.168.1.1"
 vip2: "192.168.1.2"
+vip3: "192.168.202.220"
 nfs1: "/volumes/tankm1/nfs/"
 nfs2: "/volumes/tankz2/nfs/"
+testvolume: "kek"
 
