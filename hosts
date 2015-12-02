@@ -3,6 +3,7 @@ localhost ansible_connection=local
 
 [win]
 192.168.1.54
+192.168.1.50
 
 [ilumos]
 10.3.70.190
@@ -14,8 +15,8 @@ localhost ansible_connection=local
 10.3.70.115
 
 [vsphere]
-10.3.53.123
+10.3.53.156
 
 [esx]
 10.3.70.13
-10.3.70.16
+10.3.70.29

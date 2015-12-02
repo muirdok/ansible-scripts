@@ -3,10 +3,6 @@
    - win
   user: root
   vars:
-    dstpath: "/home/root/"
+    dstpath: "./"
   roles:
    - {role: vdbench_win, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
-
-
-
-

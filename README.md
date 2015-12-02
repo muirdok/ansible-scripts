@@ -29,6 +29,7 @@ On Windows clients:
 - openssh server
 - python
 - ssh-bindings with ansible host
+- java
 
 On nix client:
 - openssh server
