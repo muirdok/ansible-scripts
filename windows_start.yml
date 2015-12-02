@@ -1,0 +1,8 @@
+---
+- hosts:
+   - win
+  user: root
+  vars:
+    dstpath: "/home/root/"
+  roles:
+   - {role: vdbench_win, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
