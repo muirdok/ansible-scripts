@@ -1,0 +1,21 @@
+---
+- hosts:
+   - localio
+  user: root
+  vars_files: 
+   - vdbvars.yml
+  tasks:
+   - name: Configure resolvconf
+     lineinfile: dest=/etc/resolv.conf line='nameserver 8.8.8.8'
+   - name: Create THE Folder
+     file: path="{{vdpath}}" state=directory mode=0777
+   - name: Create THE Folder fsload or link
+     file: src="/mnt/ns/fc" dest="{{vdpath}}/fsload" state=link
+   - name: Copy config
+     template: src={{vconftmp}} dest="{{vdpath}}{{vconf}}"
+   - name: Unzip vdb to folder
+     unarchive: src={{vdarcht}} dest="{{vdpath}}"
+   - name: Run IO
+     shell: "{{vdpath}}{{vdbshell}} -f {{vdpath}}{{vconf}}"
+     async: 40000
+     poll: 0

@@ -4,7 +4,7 @@
 - assert:
    that:
     - vconf != ""
-    - vdarch != ""
+    - vdarcht != ""
     - vdpath != ""
     - vdbshell != ""
 - name: Configure resolvconf
@@ -27,8 +27,8 @@
 - name: Copy config
   template: src=../../common/templates/{{ vconf }}.j2 dest={{ vdpath }}{{ vconf }}
 - name: Unzip vdb to folder
-  unarchive: src={{vdarch}} dest={{ vdpath }}
+  unarchive: src={{vdarcht}} dest={{ vdpath }}
 - name: Run IO
-  shell: "{{ vdpath }}{{ vdb }} -f {{ vdpath }}{{ vconf }}"
-  async: 40 
+  shell: "{{ vdpath }}{{ vdbshell }} -f {{ vdpath }}{{ vconf }}"
+  async: 40000
   poll: 0

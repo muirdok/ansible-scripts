@@ -1,5 +1,4 @@
 ---
-# tasks file for vdbench
 - include_vars: "{{ vars_file }}"
 - assert:
    that:
@@ -8,15 +7,18 @@
     - vdpath != ""
     - vdbshell != ""
 - name: Create THE Folder
-  file: path="{{vdpath}}{{ansible_machine_id}}" state=directory mode=0777
-- name: Mount share (NFS)
-  mount: name="{{vdpath}}{{ansible_machine_id}}" src="{{vip1}}:{{volume}}{{ansible_machine_id}}" fstype=nfs opts="rw,sync" state=mounted
+  file: path="{{vdpath}}" state=directory mode=0777
+- name: Create THE Folder fsload
+  file: path="{{vdpath}}fsload" state=directory mode=0777
+#- name: Mount share (NFS)
+#  mount: name="{{vdpath}}fsload" src="{{vip2}}:{{nfs2}}{{inventory_hostname}}" fstype=nfs opts="rw,sync" state=mounted
+- name: MOUNT NFS
+  shell:  mount {{vip2}}:{{nfs2}}{{inventory_hostname}} {{vdpath}}fsload
 - name: Copy config
-  template: src={{vconftmp}} dest="{{vdpath}}{{ansible_machine_id}}{{vconf}}"
+  template: src={{vconftmp}} dest="{{vdpath}}{{vconf}}"
 - name: Unzip vdb to folder
-  unarchive: src={{vdarcht}} dest="{{vdpath}}{{ansible_machine_id}}"
+  unarchive: src={{vdarcht}} dest="{{vdpath}}"
 - name: Run IO
-  shell: "{{vdpath}}{{ansible_machine_id}}{{vdbshell}} -f {{vdpath}}{{ansible_machine_id}}{{vconf}}"
-  async: 40
+  shell: "{{vdpath}}{{vdbshell}} -f {{vdpath}}{{vconf}}"
+  async: 40000
   poll: 0
-
