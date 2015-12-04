@@ -1,22 +1,8 @@
 ---
-- hosts:
-   - linux
-  user: root
-  roles:
-   - {role: vdbench_lin, "vars_file": "vdbvars.yml"}
-- hosts:
-   - win
-  user: root
-  roles:
-   - {role: vdbench_win, "vars_file": "vdbvars.yml"}
-- hosts:
-   - solaris
-  user: root
-  roles:
-   - {role: vdbench_sol, "vars_file": "vdbvars.yml"}
-- hosts:
-   - nexenta4
-  user: root
-  roles:
-   - {role: vdbench_nex, "vars_file": "vdbvars.yml"}
+- include: localio.yml
+- include: linux_vdb.yml
+- include: solaris_vdb.yml
+- include: nexenta4_vdb.yml
+- include: mixed_vdb.yml
+
 

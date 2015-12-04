@@ -30,5 +30,5 @@
   unarchive: src={{vdarcht}} dest={{ vdpath }}
 - name: Run IO
   shell: "{{ vdpath }}{{ vdbshell }} -f {{ vdpath }}{{ vconf }}"
-  async: 40000
+  async: 4000000
   poll: 0

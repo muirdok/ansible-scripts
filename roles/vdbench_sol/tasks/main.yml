@@ -6,6 +6,15 @@
     - vdarcht != ""
     - vdpath != ""
     - vdbshell != ""
+- name: UUUMount share (NFS) shell
+  shell: umount -f /root/VDBench/fsload
+  ignore_errors: yes
+- name: UUUMount share (NFS) shell
+  shell: umount -f /root/VDBench/
+  ignore_errors: yes
+- name: Delete THE Folder
+  file: path="{{vdpath}}" state=absent mode=0777
+  ignore_errors: yes
 - name: Create THE Folder
   file: path="{{vdpath}}" state=directory mode=0777
 - name: Create THE Folder fsload
@@ -19,6 +28,6 @@
 - name: Unzip vdb to folder
   unarchive: src={{vdarcht}} dest="{{vdpath}}"
 - name: Run IO
-  shell: "{{vdpath}}{{vdbshell}} -f {{vdpath}}{{vconf}}"
-  async: 40000
+  shell: "{{vdpath}}{{vdbshell}} -f {{vdpath}}{{vconf}} -o /root/output"
+  async: 4000000
   poll: 0

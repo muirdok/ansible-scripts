@@ -1,13 +1,13 @@
 ---
 - hosts:
-   - test
+   - linux
+   - linuxmix
+   - localio
   user: root
-  vars:
-    dstpath: "/root/"
-#  roles:
-#   - {role: vdbench_lin, vdb: "vdbench.bash", vconf: "vdb.conf", vdpath: "/root/VDBench/", vdarch: "../../common/files/vdb.tar.gz"}
+  gather_facts: no
+  vars_files:
+   - vdbvars.yml
   tasks:
-   - name: check the proccess
-     shell: ps aux | grep java
-
+   - name: Configure selinux
+     lineinfile: dest=/etc/sysconfig/selinux line="SELINUX=disabled"
 

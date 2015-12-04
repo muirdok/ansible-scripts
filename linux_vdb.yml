@@ -1,6 +1,6 @@
 ---
 - hosts:
-   - linuxxen
+   - linux
   user: root
   roles:
    - {role: vdbench_lin, "vars_file": "vdbvars.yml"}

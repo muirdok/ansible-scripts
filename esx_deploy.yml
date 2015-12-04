@@ -5,110 +5,34 @@
    vcenter_hostname: 10.3.53.156
    username: administrator
    password: Nexenta2
-   newvmname: FPTESTVM
-   template_c65: QACentos65-tmp
-   template_c7: QACentos7-tmp
-   template_sol: QASolaris-tmp
-   template_w8: QAWin2008-tmp
-   template_w12: QAWin2012-tmp
+   template: "Linux-tmp"
+   vmnameprefix: LinuxMix
    resource_pool: "/Resources"
    cluster: foo
    datacenter: QA
-   esxname: 10.3.70.29
+   esxname: 10.3.70.16
   tasks:
-  - name: Deploy 5 Windows 2012 from template
+  - name: Deploy 5 ANY VM from templte
     vsphere_guest:
       vcenter_hostname: "{{ vcenter_hostname }}"
       username: "{{ username }}"
       password: "{{ password }}"
       from_template: yes
-      template_src: "{{template_w12}}"
+      template_src: "{{template}}"
       resource_pool: "{{ resource_pool }}"
       cluster: "{{ cluster }}"
       esxi:
         datacenter: "{{ datacenter }}"
         hostname: "{{ esxname }}"
-      guest: "Windows2012{{ item }}"
+      guest: "{{vmnameprefix}}{{ item }}"
     with_items:
       - "-vm1"
       - "-vm2"
       - "-vm3"
       - "-vm4"
       - "-vm5"
-  - name: Deploy 5 Windows 2008 from template
-    vsphere_guest:
-      vcenter_hostname: "{{ vcenter_hostname }}"
-      username: "{{ username }}"
-      password: "{{ password }}"
-      from_template: yes
-      template_src: "{{template_w8}}"
-      resource_pool: "{{ resource_pool }}"
-      cluster: "{{ cluster }}"
-      esxi:
-        datacenter: "{{ datacenter }}"
-        hostname: "{{ esxname }}"
-      guest: "Windows2008{{ item }}"
-    with_items:
-      - "-vm1"
-      - "-vm2"
-      - "-vm3"
-      - "-vm4"
-      - "-vm5"
-  - name: Deploy 5 Linux 65 from template
-    vsphere_guest:
-      vcenter_hostname: "{{ vcenter_hostname }}"
-      username: "{{ username }}"
-      password: "{{ password }}"
-      from_template: yes
-      template_src: "{{template_c65}}"
-      resource_pool: "{{ resource_pool }}"
-      cluster: "{{ cluster }}"
-      esxi:
-        datacenter: "{{ datacenter }}"
-        hostname: "{{ esxname }}"
-      guest: "Centos65{{ item }}"
-    with_items:
-      - "-vm1"
-      - "-vm2"
-      - "-vm3"
-      - "-vm4"
-      - "-vm5"
-  - name: Deploy 5 Linux 7 from template
-    vsphere_guest:
-      vcenter_hostname: "{{ vcenter_hostname }}"
-      username: "{{ username }}"
-      password: "{{ password }}"
-      from_template: yes
-      template_src: "{{template_c7}}"
-      resource_pool: "{{ resource_pool }}"
-      cluster: "{{ cluster }}"
-      esxi:
-        datacenter: "{{ datacenter }}"
-        hostname: "{{ esxname }}"
-      guest: "Centos7{{ item }}"
-    with_items:
-      - "-vm1"
-      - "-vm2"
-      - "-vm3"
-      - "-vm4"
-      - "-vm5"
-  - name: Deploy 5 Solaris from template
-    vsphere_guest:
-      vcenter_hostname: "{{ vcenter_hostname }}"
-      username: "{{ username }}"
-      password: "{{ password }}"
-      from_template: yes
-      template_src: "{{template_sol}}"
-      resource_pool: "{{ resource_pool }}"
-      cluster: "{{ cluster }}"
-      esxi:
-        datacenter: "{{ datacenter }}"
-        hostname: "{{ esxname }}"
-      guest: "Solaris {{ item }}"
-    with_items:
-      - "-vm1"
-      - "-vm2"
-      - "-vm3"
-      - "-vm4"
-      - "-vm5"
+      - "-vm6"
+      - "-vm7"
+      - "-vm8"
+
 

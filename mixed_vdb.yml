@@ -1,0 +1,6 @@
+---
+- hosts:
+   - linuxmix
+  user: root
+  roles:
+   - {role: vdbench_lin_mixed, "vars_file": "vdbvars.yml"}
