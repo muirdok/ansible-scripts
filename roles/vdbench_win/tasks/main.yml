@@ -7,6 +7,9 @@
     - vdpath != ""
     - vdbbat != ""
     - vdpathw != ""
+- name: Kill JAVA proccess
+  shell: "ps -W | awk '/java.exe/,NF=1' | xargs kill -f"
+  ignore_errors: yes
 - name: Create THE Folder
   file: path="{{ vdpathw }}" state=directory mode=0777
 - name: Copy VBD config

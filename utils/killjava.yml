@@ -1,14 +1,15 @@
 ---
 - hosts:
 #   - linux
-#   - solaris
-#   - nexenta4
+   - centos6
+   - centos7
    - linuxmix
+   - centosxen
 #   - localio
   user: root
   gather_facts: no
   vars_files: 
-   - vdbvars.yml
+   - ../vdbvars.yml
   tasks:
    - name: KILL JAVA
      command: pkill -HUP java

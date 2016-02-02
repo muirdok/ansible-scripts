@@ -1,6 +1,9 @@
 ---
 - hosts:
-   - linux
+   - centos6
+   - centos7
+   - centosxen
+#   - centos7new
   user: root
   roles:
    - {role: vdbench_lin, "vars_file": "vdbvars.yml"}

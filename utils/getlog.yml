@@ -1,12 +1,12 @@
 ---
 - hosts:
-   - linux
-   - solaris
-   - nexenta4
+   - centos6
+   - centos7
+   - centos-xen
   user: root
   gather_facts: no
   vars_files: 
-   - vdbvars.yml
+   - ../vdbvars.yml
   tasks:
    - name: TAIL log NFS
      command: tail -20 /root/output/logfile.html
@@ -18,7 +18,7 @@
   user: root
   gather_facts: no
   vars_files:
-   - vdbvars.yml
+   - ../vdbvars.yml
   tasks:
    - name: TAIL log NFS
      command: tail -20 /root/output/logfile.html

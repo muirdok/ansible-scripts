@@ -8,18 +8,24 @@
     - vdbshell != ""
 - name: Configure resolvconf
   lineinfile: dest=/etc/resolv.conf line='nameserver 8.8.8.8'
-- include: apt.yml
-  when: ansible_pkg_mgr == 'apt'
-- include: yum.yml
-  when: ansible_pkg_mgr == 'yum'
-- name: UUUMount share (NFS) shell
+#- include: apt.yml
+#  when: ansible_pkg_mgr == 'apt'
+#- include: yum.yml
+#  when: ansible_pkg_mgr == 'yum'
+- name: UUUMount share (NFS) shell all
+  shell: umount -a
+  ignore_errors: yes
+- name: UUUMount share (NFS) shell fsload try 2
   shell: umount -f -l /root/VDBench/fsload
   ignore_errors: yes
-- name: UUUMount share (CIFS) shell
-  shell: umount -f -l /root/fsload2
+- name: UUUMount share (CIFS) shell VDB
+  shell: umount -f -l /root/VDBench
   ignore_errors: yes
-- name: Delete THE Folder
-  file: path="{{vdpath}}" state=absent mode=0777
+- name: Delete THE Folder log
+  file: path=/root/output state=absent mode=0777
+  ignore_errors: yes
+- name: Delete THE Folder log2
+  file: path=/root/output2 state=absent mode=0777
   ignore_errors: yes
 - name: Create THE Folder
   file: path="{{vdpath}}" state=directory mode=0777
@@ -50,5 +56,8 @@
   shell: "{{vdpath}}{{vdbshell}} -f {{vdpath}}{{vconf}}2 -o /root/output2"
   async: 4000000
   poll: 0
+#- name: Remove share (FSTAB)
+#  shell: 'grep -v "[0-999].[0-999].[0-99]" /etc/fstab > /tmp/fstab && cat /tmp/fstab > /etc/fstab'
+
 
 

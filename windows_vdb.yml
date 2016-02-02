@@ -1,6 +1,8 @@
 ---
 - hosts:
-   - win
+   - win2008
+   - win2012
+   - win-xen
   user: root
   roles:
    - {role: vdbench_win, "vars_file": "vdbvars.yml"}
