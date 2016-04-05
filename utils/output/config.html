@@ -1,0 +1,1760 @@
+<pre>
+10:34:19.182 config.sh command output:
+
+stdout: You have root!
+stdout: >>>>>uname -a
+stdout: SunOS nodeb 5.11 NexentaStor_5.0.0.32:43fa326779:debug i86pc i386 i86pc
+stdout: >>>>>ifconfig -a
+stdout: lo0: flags=2001000849<UP,LOOPBACK,RUNNING,MULTICAST,IPv4,VIRTUAL> mtu 8232 index 1
+stdout: 	inet 127.0.0.1 netmask ff000000 
+stdout: igb0: flags=1000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4> mtu 1500 index 2
+stdout: 	inet 10.3.69.28 netmask fffff000 broadcast 10.3.79.255
+stdout: 	ether 0:25:90:7e:e0:84 
+stdout: lo0: flags=2002000849<UP,LOOPBACK,RUNNING,MULTICAST,IPv6,VIRTUAL> mtu 8252 index 1
+stdout: 	inet6 ::1/128 
+stdout: igb0: flags=20002004841<UP,RUNNING,MULTICAST,DHCP,IPv6> mtu 1500 index 2
+stdout: 	inet6 fe80::225:90ff:fe7e:e084/10 
+stdout: 	ether 0:25:90:7e:e0:84 
+stdout: >>>>>id
+stdout: uid=0(root) gid=0(root)
+stdout: >>>>>modinfo
+stdout:  Id         Loadaddr   Size Info Rev Module Name
+stdout:   0 fffffffffb800000 236a20   -   0  unix ()
+stdout:   1 fffffffffbca4700 37a128   -   0  genunix ()
+stdout:   3 fffffffffb993000   7530   1   1  specfs (filesystem for specfs)
+stdout:   4 fffffffffb99a430   5f50   3   1  fifofs (filesystem for fifo)
+stdout:   5 fffffffff84b2000  26848  59   1  dtrace (Dynamic Tracing)
+stdout:   6 fffffffffb9a0290   8c40  16   1  devfs (devices filesystem)
+stdout:   7 fffffffffb9a8c08  193f8  17   1  dev (/dev filesystem)
+stdout:   8 fffffffffb9c1938   7f60   -   1  dls (Data-Link Services)
+stdout:   9 fffffffffb9c97d8  41a58   -   1  mac (MAC Services)
+stdout:  10 fffffffffba0a078  26250   5   1  procfs (filesystem for proc)
+stdout:  12 fffffffffba2fd30   51f0   1   1  TS (time sharing sched class)
+stdout:  13 fffffffffba34698    a18   -   1  TS_DPTBL (Time sharing dispatch table)
+stdout:  14 fffffffffba34848   a8a0   -   1  pci_autoconfig (PCI BIOS interface)
+stdout:  15 fffffffffba3efa0  70128   -   1  acpica (ACPI interpreter)
+stdout:  16 fffffffffbaae278  20bf8   -   1  pcie (PCI Express Framework Module)
+stdout:  17 fffffffffbaced00   2fd8   -   1  busra (Bus Resource Allocator (BUSRA))
+stdout:  18 fffffffffbad1c48  14e68   -   1  acpidev (ACPI device enumerator)
+stdout:  19 fffffffffbae5fd8   40c8 112   1  isa (isa nexus driver for 'ISA')
+stdout:  20 fffffffffbae9c18   4f78   -   1  cpu.generic (Generic x86 CPU Module)
+stdout:  21 fffffffffbaee448   17d8   -   1  cpu_ms.GenuineIntel (Generic Intel model-sp
+stdout:  22 fffffffffbaefb70   3b80   1   1  uppc (UniProcessor PC)
+stdout:  24 fffffffffbaf34b0  18fd8   2   1  apix (apix MPv1.4 compatible)
+stdout:  26 fffffffffbb202e0  17a80 188   1  rootnex (i86pc root nexus)
+stdout:  27 fffffffffbb376f0   2cd8   -   1  iommulib (IOMMU library module)
+stdout:  28 fffffffffbb3a310    330 154   1  options (options driver)
+stdout:  29 fffffffffbb3a558   11b0 173   1  pseudo (nexus driver for 'pseudo' 1.31)
+stdout:  30 fffffffffbb3b480    a40   1   1  clone (Clone Pseudodriver 'clone')
+stdout:  31 fffffffffbb3bc18  1f880 195   1  scsi_vhci (SCSI VHCI Driver)
+stdout:  32 fffffffffbb5b250  2b8b0   -   1  scsi (SCSI Bus Utility Routines)
+stdout:  33 fffffffffbb82e78   15c0   -   1  scsi_vhci_f_asym_sun (f_asym_sun)
+stdout:  34 fffffffffbb84338   35f0   -   1  scsi_vhci_f_asym_lsi (f_asym_lsi)
+stdout:  35 fffffffffbb876b0   26b0   -   1  scsi_vhci_f_asym_emc (f_asym_emc)
+stdout:  36 fffffffffbb89c78    580   -   1  scsi_vhci_f_sym_emc (f_sym_emc)
+stdout:  37 fffffffffbb8a128    be8   -   1  scsi_vhci_f_sym_hds (f_sym_hds)
+stdout:  38 fffffffffbb8ac10    7d8   -   1  scsi_vhci_f_sym (f_sym)
+stdout:  39 fffffffffbb8b268   1818   -   1  scsi_vhci_f_tpgs (f_tpgs)
+stdout:  40 fffffffff77fb000   92c0 144   1  npe (Host to PCIe nexus driver)
+stdout:  43 fffffffff7804000 16aa70   8   1  zfs (ZFS filesystem version 5000)
+stdout:  43 fffffffff7804000 16aa70 270   1  zfs (ZFS storage pool)
+stdout:  44 fffffffffbb8c998   2338   -   1  swrand (Kernel Random number Provider)
+stdout:  45 fffffffff7960000  2a7e0   -   1  kcf (Kernel Crypto Framework)
+stdout:  46 fffffffffbb8e230   3a50   -   1  sha1 (SHA1 Message-Digest Algorithm)
+stdout:  46 fffffffffbb8e230   3a50   -   1  sha1 (SHA1 Kernel SW Provider 1.1)
+stdout:  47 fffffffffbb0bd08   5320   -   1  idmap (ID Mapping kernel module)
+stdout:  48 fffffffffbb10f90   7e90 201   1  doorfs (doors)
+stdout:  48 fffffffffbb10f90   7e90 201   1  doorfs (32-bit door syscalls)
+stdout:  49 fffffffff798a000  280a0 226   1  rpcmod (RPC syscall)
+stdout:  49 fffffffff798a000  280a0 226   1  rpcmod (32-bit RPC syscall)
+stdout:  49 fffffffff798a000  280a0   -   1  rpcmod (rpc interface str mod)
+stdout:  50 fffffffffbb18ca8   21a8   -   1  tlimod (KTLI misc module)
+stdout:  51 fffffffff79af000   5f88   -   1  sha2 (SHA2 Message-Digest Algorithm)
+stdout:  51 fffffffff79af000   5f88   -   1  sha2 (SHA2 Kernel SW Provider)
+stdout:  52 fffffffff79b5000   6338   -   1  skein (Skein Message-Digest Algorithm)
+stdout:  52 fffffffff79b5000   6338   -   1  skein (Skein Kernel SW Provider)
+stdout:  53 fffffffffbb1add0   3080   -   1  edonr (Edon-R Message-Digest Algorithm)
+stdout:  54 fffffffffbb91960   13a0   5   1  acpippm (ACPI ppm driver)
+stdout:  55 fffffffff79bb000   b300 169   1  ppm (platform pm driver)
+stdout:  56 fffffffff79c6000  1b5f8  11   1  ahci (ahci driver)
+stdout:  57 fffffffff79e1000  213e0   -   1  sata (SATA Module)
+stdout:  58 fffffffff7a03000  3d9f0 196   1  sd (SCSI Disk Driver)
+stdout:  59 fffffffff7a40000   9238   -   1  cmlb (Common Labeling module)
+stdout:  60 fffffffffbb1ddd0   2940   2   1  SDC (system duty cycle scheduling cl)
+stdout:  61 fffffffff7a49000   4700  18   1  ctfs (contract filesystem)
+stdout:  62 fffffffff7a4e000   4650  15   1  mntfs (mount information file system)
+stdout:  63 fffffffff7a53000  19b20  11   1  tmpfs (filesystem for tmpfs)
+stdout:  64 fffffffff7a5d000   2980  19   1  objfs (kernel object filesystem)
+stdout:  65 fffffffff7a60000   2b98  23   1  bootfs (boot-time modules file system)
+stdout:  66 fffffffff7a63000   20f0  20   1  sharefs (sharetab filesystem)
+stdout:  66 fffffffff7a63000   20f0 140   1  sharefs (sharefs syscall)
+stdout:  66 fffffffff7a63000   20f0 140   1  sharefs (sharefs syscall (32-bit))
+stdout:  67 fffffffff7a65000   3530   4   1  acpinex (ACPI virtual bus driver)
+stdout:  69 fffffffff7a6d000   1840   -   1  strplumb (STREAMS Plumbing Module)
+stdout:  70 fffffffff7a6f000   a778  53   1  dld (Data-Link Driver)
+stdout:  71 fffffffff7a7a000 1999d0 102   1  ip (IP STREAMS driver 1.47)
+stdout:  71 fffffffff7a7a000 1999d0   -   1  ip (IP STREAMS module 1.47)
+stdout:  72 fffffffff7c04000   32e8   -   1  md5 (MD5 Message-Digest Algorithm)
+stdout:  72 fffffffff7c04000   32e8   -   1  md5 (MD5 Kernel SW Provider)
+stdout:  73 fffffffff7c07000   5890   -   1  hook (Hooks Interface v1.0)
+stdout:  74 fffffffff7c0d000   3a90   -   1  neti (netinfo module)
+stdout:  75 fffffffff7a62aa8    6d0 103   1  ip6 (IP6 STREAMS driver)
+stdout:  76 fffffffff79b4a68    7f0 225   1  tcp (TCP STREAMS driver)
+stdout:  76 fffffffff79b4a68    7f0   -   1  tcp (TCP dummy STREAMS module)
+stdout:  76 fffffffff79b4a68    7f0   -   1  tcp (TCP socket module)
+stdout:  77 fffffffff7c11000  452f0  24   1  sockfs (filesystem for sockfs)
+stdout:  78 fffffffff7c03a08    6d0 226   1  tcp6 (TCP6 STREAMS driver)
+stdout:  79 fffffffff7c109f8    7f0 232   1  udp (UDP STREAMS driver)
+stdout:  79 fffffffff7c109f8    7f0   -   1  udp (UDP dummy STREAMS module)
+stdout:  79 fffffffff7c109f8    7f0   -   1  udp (UDP socket module)
+stdout:  80 fffffffff7c53958    6d0 233   1  udp6 (UDP6 STREAMS driver)
+stdout:  81 fffffffff7c0c800    7d0  95   1  icmp (ICMP STREAMS driver)
+stdout:  81 fffffffff7c0c800    7d0   -   1  icmp (ICMP dummy STREAMS module)
+stdout:  81 fffffffff7c0c800    7d0   -   1  icmp (Rawip socket module)
+stdout:  82 fffffffff7a5c770    6d0  96   1  icmp6 (ICMP6 STREAMS driver)
+stdout:  83 fffffffff7a6e6d8    710  17   1  arp (ARP STREAMS driver)
+stdout:  83 fffffffff7a6e6d8    710   -   1  arp (ARP STREAMS module)
+stdout:  84 fffffffff7c54000   5c80   -   1  timod (transport interface str mod)
+stdout:  86 fffffffff7c5a000   5e48   0   1  consconfig_dacf (Consconfig DACF)
+stdout:  87 fffffffff7c5f000   68e8   -   1  usbser (USB generic serial module)
+stdout:  88 fffffffff7c66000  3cf20   -   1  usba (USBA: USB Architecture 2.0 1.66)
+stdout:  89 fffffffff7ca2000   2780  91   1  i8042 (i8042 nexus driver)
+stdout:  90 fffffffff7ca5000   5090 159   1  pcieb (PCIe bridge/switch driver)
+stdout:  91 fffffffff7caa000   22e8 157   1  pci_pci (Standard PCI to PCI bridge nexu)
+stdout:  92 fffffffff7cad000   6120   -   1  pcihp (PCI nexus hotplug support)
+stdout:  93 fffffffff7cb3000   1f00   -   1  hpcsvc (hot-plug controller services)
+stdout:  94 fffffffff7cb5000   4f20 248   1  vgatext (VGA text driver)
+stdout:  95 fffffffff7cb9000   1a98   -   1  agpmaster (AGP master interfaces)
+stdout:  96 fffffffff7cbb000   3b90  41   1  conskbd (conskbd multiplexer driver)
+stdout:  97 fffffffff7cbf000   5c50   -   1  kbtrans (kbtrans (key translation))
+stdout:  98 fffffffff7cc4000   20f8  42   1  consms (Mouse Driver for Sun 'consms' 5)
+stdout:  99 fffffffff7cc6000   45b8 255   1  wc (Workstation multiplexer Driver )
+stdout: 100 fffffffff7ccb000   c4d8   -   1  tem (ANSI Terminal Emulator)
+stdout: 101 fffffffff7cd3000   1448 116   1  iwscn (Workstation Redirection driver)
+stdout: 102 fffffffff7cd5000  23a80  63   1  ehci (USB EHCI Driver)
+stdout: 105 fffffffff7d2b000   1558 137   1  mouse8042 (PS/2 Mouse)
+stdout: 106 fffffffff7d2d000   2510   -   1  vuid3ps2 (mouse events to vuid events)
+stdout: 109 fffffffff7d54000  18a18   -   1  ibtl (IB Transport Layer)
+stdout: 110 fffffffff7d6c000  6fc28   -   1  ibmf (IB Agent Interfaces 2.0)
+stdout: 111 fffffffff7d30000   5758   3   1  acpi_drv (ACPI driver)
+stdout: 113 fffffffff7dbc000  5aff0  21   1  audio (Audio Framework)
+stdout: 128 fffffffff7989ad0    628  89   1  hubd (USB Hub Driver)
+stdout: 129 fffffffff7e92000   32a8 123   1  kssl (Kernel SSL Interface)
+stdout: 134 fffffffff7ec2000   3338   -   1  pcbe.GenuineIntel.6 (Pentium Performance Co
+stdout: 136 fffffffff7f27000  143a8 218   1  stmf (COMSTAR STMF Mar 20 2016 14:18:)
+stdout: 137 fffffffff7e95000   c360   1   1  elfexec (exec module for elf)
+stdout: 137 fffffffff7e95000   c360   0   1  elfexec (32-bit exec module for elf)
+stdout: 139 fffffffff7ec6000   2918   -   1  ksocket (kernel socket module)
+stdout: 140 fffffffff7f68000  3f2d0   -   1  ibcm (IB Communication Manager)
+stdout: 154 fffffffff809c000  38508 139   1  mpt_sas (MPTSAS HBA Driver 00.00.00.24)
+stdout: 155 fffffffff7f5f000   30b0 240   1  usb_mid (USB Multi Interface Driver)
+stdout: 156 fffffffff80cc000   5ab8  86   1  hid (USB HID Client Driver)
+stdout: 157 fffffffff80d2000   4880   -   1  hidparser (HID Parser)
+stdout: 158 fffffffff7f62000   3290   -   1  usbms (USB mouse streams)
+stdout: 159 fffffffff80d7000   2de8   -   1  usbkbm (USB keyboard streams 1.44)
+stdout: 160 fffffffff7f66000   1570 192   1  sad (STREAMS Administrative Driver ')
+stdout: 161 fffffffff80da000   f608   -   1  ldterm (terminal line discipline)
+stdout: 162 fffffffff7ece000   2110   -   1  ttcompat (alt ioctl calls)
+stdout: 164 fffffffff80f1000   18a8 177   1  ptsl (tty pseudo driver slave 'ptsl')
+stdout: 165 fffffffff80f3000   1f78 174   1  ptc (tty pseudo driver control 'ptc')
+stdout: 174 fffffffff8142000   4070 184   1  rds (RDS STREAMS driver)
+stdout: 175 fffffffff8146000   bc18 228   1  tl (TPI Local Transport (tl))
+stdout: 176 fffffffff8152000   51e8 120   1  keysock (PF_KEY socket STREAMS driver)
+stdout: 176 fffffffff8152000   51e8   -   1  keysock (PF_KEY socket STREAMS module)
+stdout: 177 fffffffff8157000   83f8 215   1  spdsock (PF_POLICY socket STREAMS driver)
+stdout: 178 fffffffff815f000   1e68 222   1  sysmsg (System message redirection (fan)
+stdout: 179 fffffffff7e33500    c70  40   1  cn (Console redirection driver)
+stdout: 180 fffffffff8161000   1908 136   1  mm (memory driver)
+stdout: 181 fffffffff795fba8    510  42   1  pipe (pipe(2) syscall)
+stdout: 181 fffffffff795fba8    510  42   1  pipe (32-bit pipe(2) syscall)
+stdout: 182 fffffffff8163000   2740   4   1  namefs (filesystem for namefs)
+stdout: 183 fffffffff8166000   7a68 182   1  portfs (event ports)
+stdout: 183 fffffffff8166000   7a68 182   1  portfs (32-bit event ports syscalls)
+stdout: 184 fffffffff7cba9c0    6f8   2   1  intpexec (exec mod for interp)
+stdout: 185 fffffffff84f2cd8   11b8 210   1  smp (smp device driver)
+stdout: 186 fffffffff816e000   7dd8 201   1  ses (SCSI Enclosure Services)
+stdout: 192 fffffffff81f4000  3d370 113   1  iscsi (iSCSI Initiator v-1.55)
+stdout: 193 fffffffff8231000  82310 179   1  qlc (SunFC Qlogic FCA v151216-3.07)
+stdout: 194 fffffffff82ad000  e23f0  66   1  emlxs (emlxs FCA v20120917-2.80.8.0)
+stdout: 195 fffffffff8387000  147c8   -   1  idm (iSCSI Data Mover)
+stdout: 196 fffffffff837a000   d290   -   1  fctl (SunFC Transport v20090729-1.70)
+stdout: 197 fffffffff839c000   5a80   -   1  bignum (bignum utility module)
+stdout: 198 fffffffff7fa6ec8  40980   -   1  qlc_fw_2400 (SunFC Qlogic FCA-FW 8.02.00)
+stdout: 199 fffffffff83a2000  1ef78  80   1  fp (SunFC Port v20091123-1.101)
+stdout: 200 fffffffff83c1000  1dd68  73   1  fcp (SunFC FCP v20091208-1.192)
+stdout: 201 fffffffff83df000   18c0 221   1  sysevent (sysevent driver)
+stdout: 202 fffffffff83e0708    b98 130   1  log (streams log driver)
+stdout: 203 fffffffff83e1000   c4c8   -   1  softmac (softmac module)
+stdout: 203 fffffffff83e1000   c4c8 211   1  softmac (softmac driver)
+stdout: 204 fffffffff83dea48    750 191   1  rts (PF_ROUTE socket STREAMS driver)
+stdout: 204 fffffffff83dea48    750   -   1  rts (PF_ROUTE socket module)
+stdout: 205 fffffffff83ed000  3ece8  97   1  igb (Intel 1Gb Ethernet)
+stdout: 206 fffffffff8119458   1dc8   -   1  mac_ether (Ethernet MAC plugin)
+stdout: 208 fffffffff842c000  155e0 219   1  stmf_sbd (COMSTAR SBD+ Mar 20 2016 14:18:)
+stdout: 211 fffffffff810e000   8410  88   1  devinfo (DEVINFO Driver)
+stdout: 213 fffffffff7ea2b90    5d0 163   1  pit_beep (Intel Pit_beep Driver)
+stdout: 215 fffffffff8465000  1c298 114   1  iscsit (iSCSI Target)
+stdout: 220 fffffffff7ee0000   1c10  43   1  cpc (cpc sampling driver)
+stdout: 220 fffffffff7ee0000   1c10 179   1  cpc (cpc sampling system call)
+stdout: 220 fffffffff7ee0000   1c10 179   1  cpc (32-bit cpc sampling system call)
+stdout: 222 fffffffff7fd5000  16180  48   1  crypto (Cryptographic Library Interface)
+stdout: 226 fffffffff84d8000   75c8  70   1  fasttrap (Fasttrap Tracing)
+stdout: 233 fffffffff84ed000   61e0 105   1  ipnet (STREAMS ipnet driver)
+stdout: 238 fffffffff860b000  14180 122   1  krrp (kernel remote replication proto)
+stdout: 244 fffffffff88a0000   21c8 153   1  openeepr (OPENPROM/NVRAM Driver)
+stdout: 247 fffffffff8673000   18b0 168   1  power (power button driver)
+stdout: 250 fffffffff7dbb870    938 183   1  random (random number device)
+stdout: 255 fffffffff8680000   1b68 216   1  srn (srn driver)
+stdout: 256 fffffffff80117c0    9c0 220   1  sy (Indirect driver for tty 'sy')
+stdout: 261 fffffffff8689000   48d0  10   1  lofs (filesystem for lofs)
+stdout: 263 fffffffff868e000   15f8  12   1  fdfs (filesystem for fd)
+stdout: 265 fffffffff84f7480    d20  68   1  eventfd (eventfd support)
+stdout: 267 fffffffff7d0dc80    410   -   1  fssnap_if (File System Snapshot Interface)
+stdout: 268 fffffffff8699000  533b8   2   1  ufs (filesystem for ufs)
+stdout: 269 fffffffff86eb000  3a678 104   1  ipf (IP Filter: v4.1.9)
+stdout: 270 fffffffff8724000   14d8 124   1  kstat (kernel statistics driver)
+stdout: 272 fffffffff8726000   2538 131   1  logindmux (logindmux driver)
+stdout: 276 fffffffff8744000   1460 167   1  pool (pool driver)
+stdout: 277 fffffffff8746000   17f8 175   1  ptm (Master streams driver 'ptm')
+stdout: 278 fffffffff8748000   1890 176   1  pts (Slave Stream Pseudo Terminal dr)
+stdout: 281 fffffffff87cd000  13368   -   1  klmmod (lock mgr common module)
+stdout: 282 fffffffff87e0000  b40a0 106   1  nfs (NFS syscall, client, and common)
+stdout: 282 fffffffff87e0000  b40a0 106   1  nfs (NFS syscall, client, and common)
+stdout: 282 fffffffff87e0000  b40a0  25   1  nfs (network filesystem)
+stdout: 282 fffffffff87e0000  b40a0   7   1  nfs (network filesystem version 2)
+stdout: 282 fffffffff87e0000  b40a0  26   1  nfs (network filesystem version 3)
+stdout: 282 fffffffff87e0000  b40a0  27   1  nfs (network filesystem version 4)
+stdout: 283 fffffffff8892000   7be0   -   1  rpcsec (kernel RPC security module.)
+stdout: 288 fffffffff88a2000   1f20   3   1  RT (realtime scheduling class)
+stdout: 289 fffffffff7d53ef0    370   -   1  RT_DPTBL (realtime dispatch table)
+stdout: 290 fffffffff88a4000   bfa8  28   1  autofs (filesystem for autofs)
+stdout: 290 fffffffff88a4000   bfa8 228   1  autofs (AUTOFS syscall)
+stdout: 290 fffffffff88a4000   bfa8 228   1  autofs (AUTOFS syscall (32-bit))
+stdout: 291 fffffffff88b0000   2648  52   1  shmsys (System V shared memory)
+stdout: 291 fffffffff88b0000   2648  52   1  shmsys (32-bit System V shared memory)
+stdout: 292 fffffffff88b3000   2970   -   1  ipc (common ipc code)
+stdout: 293 fffffffff88b6000   2268 207   1  pset (processor sets)
+stdout: 293 fffffffff88b6000   2268 207   1  pset (32-bit pset(2) syscall)
+stdout: 294 fffffffff7e32000   1428   -   1  ptem (pty hardware emulator)
+stdout: >>>>>cfgadm -al
+stdout: Ap_Id                          Type         Receptacle   Occupant     Condition
+stdout: c2                             scsi-sas     connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E0A02d0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E0A16d0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E0A46d0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E0AA6d0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E0ADAd0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E08E2d0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E09AAd0  disk         connected    configured   unknown
+stdout: c2::dsk/c2t50011731002E0966d0  disk         connected    configured   unknown
+stdout: c2::es/ses0                    ESI          connected    configured   unknown
+stdout: c2::es/ses1                    ESI          connected    configured   unknown
+stdout: c2::es/ses2                    ESI          connected    configured   unknown
+stdout: c2::es/ses3                    ESI          connected    configured   unknown
+stdout: c2::es/ses4                    ESI          connected    configured   unknown
+stdout: c2::smp/expd0                  smp          connected    configured   unknown
+stdout: c2::smp/expd1                  smp          connected    configured   unknown
+stdout: c2::smp/expd2                  smp          connected    configured   unknown
+stdout: c2::smp/expd3                  smp          connected    configured   unknown
+stdout: c2::smp/expd4                  smp          connected    configured   unknown
+stdout: c2::w5000a72b30072fb1,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50026324366,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50033d806ce,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50033ed6c9e,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50034c1b442,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50034c1837e,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50034c20416,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041a5b7d9,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041a5f4e1,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041a5f025,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041a5f109,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa4a01,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa6a09,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa6a59,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa6d51,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa42f1,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa42fd,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa44b5,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa4575,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041aa6769,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041abb6c1,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041abb9a1,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041abba1d,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041ac38f5,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041ac7135,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041acaed1,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041acb8a9,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50041e48fd6,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7bb5a,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7bcbe,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c1d6,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c2d2,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c4fe,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c38a,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c64e,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c97a,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7c336,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7cb2a,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7cbde,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7cbfa,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7cce2,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7cf1e,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50055e7cf8e,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50062a2e45d,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50062a2ffba,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50062a247de,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50062a578c2,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500340f3e12,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fc8ba,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fcaae,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fcac6,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fceee,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fd0b6,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fd4d6,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fd5c2,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500343fd086,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500629f3dd5,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c500629f3e9d,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c5003425dc5e,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c50034258d96,0        disk-path    connected    configured   unknown
+stdout: c2::w5000c5003426453e,0        disk-path    connected    configured   unknown
+stdout: c2::w50014ee5aaaaff03,0        disk-path    connected    configured   unknown
+stdout: c2::w50014ee50000162a,0        disk-path    connected    configured   unknown
+stdout: c2::w50014ee50000914b,0        disk-path    connected    configured   unknown
+stdout: c2::w50014ee50000943f,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8abb3,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8ac93,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8acc3,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8ad1b,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8ad33,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8ad43,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c8c06f,0        disk-path    connected    configured   unknown
+stdout: c2::w50000393a8c88803,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039358c831ff,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039358c8390b,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039358c83907,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039398c88a07,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039398c88a57,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039398c88e63,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039398c89a5f,0        disk-path    connected    configured   unknown
+stdout: c2::w5000039398c898ef,0        disk-path    connected    configured   unknown
+stdout: c2::w5001173100234bae,0        disk-path    connected    configured   unknown
+stdout: c2::w5001173100234c62,0        disk-path    connected    configured   unknown
+stdout: c2::w5001173100234c82,0        disk-path    connected    configured   unknown
+stdout: c2::w50011731001ccc9a,0        disk-path    connected    configured   unknown
+stdout: c3                             scsi-sas     connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E0A01d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E0A15d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E0A45d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E0AA5d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E0AD9d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E08E1d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E09A9d0  disk         connected    configured   unknown
+stdout: c3::dsk/c3t50011731002E0965d0  disk         connected    configured   unknown
+stdout: c3::es/ses5                    ESI          connected    configured   unknown
+stdout: c3::es/ses6                    ESI          connected    configured   unknown
+stdout: c3::es/ses7                    ESI          connected    configured   unknown
+stdout: c3::es/ses8                    ESI          connected    configured   unknown
+stdout: c3::es/ses9                    ESI          connected    configured   unknown
+stdout: c3::smp/expd5                  smp          connected    configured   unknown
+stdout: c3::smp/expd6                  smp          connected    configured   unknown
+stdout: c3::smp/expd7                  smp          connected    configured   unknown
+stdout: c3::smp/expd8                  smp          connected    configured   unknown
+stdout: c3::smp/expd9                  smp          connected    configured   unknown
+stdout: c3::w5000a72a30072fb1,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50026324365,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50033d806cd,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50033ed6c9d,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50034c1b441,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50034c1837d,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50034c20415,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041a5b7da,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041a5f4e2,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041a5f10a,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041a5f026,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa4a02,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa6a0a,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa6a5a,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa6d52,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa42f2,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa42fe,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa44b6,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa676a,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041aa4576,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041abb6c2,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041abb9a2,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041abba1e,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041ac38f6,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041ac7136,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041acaed2,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041acb8aa,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50041e48fd5,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7bb59,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7bcbd,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c1d5,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c2d1,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c4fd,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c64d,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c335,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c389,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7c979,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7cb29,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7cbdd,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7cbf9,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7cce1,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7cf1d,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50055e7cf8d,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50062a2e45e,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50062a2ffb9,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50062a247dd,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50062a578c1,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500340f3e11,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fc8b9,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fcaad,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fcac5,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fceed,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fd0b5,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fd4d5,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fd5c1,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500343fd085,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500629f3dd6,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c500629f3e9e,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c5003425dc5d,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c50034258d95,0        disk-path    connected    configured   unknown
+stdout: c3::w5000c5003426453d,0        disk-path    connected    configured   unknown
+stdout: c3::w50014ee5aaaaff02,0        disk-path    connected    configured   unknown
+stdout: c3::w50014ee50000162b,0        disk-path    connected    configured   unknown
+stdout: c3::w50014ee50000914a,0        disk-path    connected    configured   unknown
+stdout: c3::w50014ee50000943e,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8abb2,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8ac92,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8acc2,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8ad1a,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8ad32,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8ad42,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c8c06e,0        disk-path    connected    configured   unknown
+stdout: c3::w50000393a8c88802,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039358c831fe,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039358c8390a,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039358c83906,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039398c88a06,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039398c88a56,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039398c88e62,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039398c89a5e,0        disk-path    connected    configured   unknown
+stdout: c3::w5000039398c898ee,0        disk-path    connected    configured   unknown
+stdout: c3::w5001173100234bad,0        disk-path    connected    configured   unknown
+stdout: c3::w5001173100234c61,0        disk-path    connected    configured   unknown
+stdout: c3::w5001173100234c81,0        disk-path    connected    configured   unknown
+stdout: c3::w50011731001ccc99,0        disk-path    connected    configured   unknown
+stdout: c5                             fc-fabric    connected    unconfigured unknown
+stdout: c5::2100001b329b343f           unknown      connected    unconfigured unknown
+stdout: c6                             fc-fabric    connected    unconfigured unknown
+stdout: c6::10000000c98c4e89           unknown      connected    unconfigured unknown
+stdout: c6::2100001b320e7359           unknown      connected    unconfigured unknown
+stdout: c6::210000e08b1d67ec           unknown      connected    unconfigured unknown
+stdout: c6::2101001b32bb343f           unknown      connected    unconfigured unknown
+stdout: c7                             scsi-sas     connected    unconfigured unknown
+stdout: c8                             fc           connected    unconfigured unknown
+stdout: c9                             fc-fabric    connected    unconfigured unknown
+stdout: c9::2101001b32bb343f           unknown      connected    unconfigured unknown
+stdout: c10                            fc-fabric    connected    unconfigured unknown
+stdout: c10::2100001b329b343f          unknown      connected    unconfigured unknown
+stdout: c11                            fc           connected    unconfigured unknown
+stdout: sata1/0::dsk/c4t0d0            disk         connected    configured   ok
+stdout: sata1/1                        sata-port    empty        unconfigured ok
+stdout: sata1/2::dsk/c4t2d0            disk         connected    configured   ok
+stdout: sata1/3                        sata-port    empty        unconfigured ok
+stdout: sata1/4                        sata-port    empty        unconfigured ok
+stdout: sata1/5::dsk/c4t5d0            cd/dvd       connected    configured   ok
+stdout: usb2/1                         usb-hub      connected    configured   ok
+stdout: usb2/1.1                       unknown      empty        unconfigured ok
+stdout: usb2/1.2                       unknown      empty        unconfigured ok
+stdout: usb2/1.3                       usb-device   connected    configured   ok
+stdout: usb2/1.4                       unknown      empty        unconfigured ok
+stdout: usb2/1.5                       unknown      empty        unconfigured ok
+stdout: usb2/1.6                       unknown      empty        unconfigured ok
+stdout: usb2/2                         unknown      empty        unconfigured ok
+stdout: usb3/1                         usb-hub      connected    configured   ok
+stdout: usb3/1.1                       unknown      empty        unconfigured ok
+stdout: usb3/1.2                       unknown      empty        unconfigured ok
+stdout: usb3/1.3                       unknown      empty        unconfigured ok
+stdout: usb3/1.4                       unknown      empty        unconfigured ok
+stdout: usb3/1.5                       unknown      empty        unconfigured ok
+stdout: usb3/1.6                       unknown      empty        unconfigured ok
+stdout: usb3/1.7                       unknown      empty        unconfigured ok
+stdout: usb3/1.8                       unknown      empty        unconfigured ok
+stdout: usb3/2                         unknown      empty        unconfigured ok
+stdout: >>>>>prtdiag -v
+stdout: cat /etc/system
+stdout: *ident	"%Z%%M%	%I%	%E% SMI" /* SVR4 1.5 */
+stdout: *
+stdout: * CDDL HEADER START
+stdout: *
+stdout: * The contents of this file are subject to the terms of the
+stdout: * Common Development and Distribution License, Version 1.0 only
+stdout: * (the "License").  You may not use this file except in compliance
+stdout: * with the License.
+stdout: *
+stdout: * You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+stdout: * or http://www.opensolaris.org/os/licensing.
+stdout: * See the License for the specific language governing permissions
+stdout: * and limitations under the License.
+stdout: *
+stdout: * When distributing Covered Code, include this CDDL HEADER in each
+stdout: * file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+stdout: * If applicable, add the following below this CDDL HEADER, with the
+stdout: * fields enclosed by brackets "[]" replaced with your own identifying
+stdout: * information: Portions Copyright [yyyy] [name of copyright owner]
+stdout: *
+stdout: * CDDL HEADER END
+stdout: *
+stdout: *
+stdout: * SYSTEM SPECIFICATION FILE
+stdout: *
+stdout: 
+stdout: * moddir:
+stdout: *
+stdout: *	Set the search path for modules.  This has a format similar to the
+stdout: *	csh path variable. If the module isn't found in the first directory
+stdout: *	it tries the second and so on. The default is /kernel /usr/kernel
+stdout: *
+stdout: *	Example:
+stdout: *		moddir: /kernel /usr/kernel /other/modules
+stdout: 
+stdout: 
+stdout: 
+stdout: * root device and root filesystem configuration:
+stdout: *
+stdout: *	The following may be used to override the defaults provided by
+stdout: *	the boot program:
+stdout: *
+stdout: *	rootfs:		Set the filesystem type of the root.
+stdout: *
+stdout: *	rootdev:	Set the root device.  This should be a fully
+stdout: *			expanded physical pathname.  The default is the
+stdout: *			physical pathname of the device where the boot
+stdout: *			program resides.  The physical pathname is
+stdout: *			highly platform and configuration dependent.
+stdout: *
+stdout: *	Example:
+stdout: *		rootfs:ufs
+stdout: *		rootdev:/sbus@1,f8000000/esp@0,800000/sd@3,0:a
+stdout: *
+stdout: *	(Swap device configuration should be specified in /etc/vfstab.)
+stdout: 
+stdout: 
+stdout: 
+stdout: * exclude:
+stdout: *
+stdout: *	Modules appearing in the moddir path which are NOT to be loaded,
+stdout: *	even if referenced. Note that `exclude' accepts either a module name,
+stdout: *	or a filename which includes the directory.
+stdout: *
+stdout: *	Examples:
+stdout: *		exclude: win
+stdout: *		exclude: sys/shmsys
+stdout: 
+stdout: 
+stdout: 
+stdout: * forceload:
+stdout: *
+stdout: *	Cause these modules to be loaded at boot time, (just before mounting
+stdout: *	the root filesystem) rather than at first reference. Note that
+stdout: * 	forceload expects a filename which includes the directory. Also
+stdout: *	note that loading a module does not necessarily imply that it will
+stdout: *	be installed.
+stdout: *
+stdout: *	Example:
+stdout: *		forceload: drv/foo
+stdout: 
+stdout: 
+stdout: 
+stdout: * set:
+stdout: *
+stdout: *	Set an integer variable in the kernel or a module to a new value.
+stdout: *	This facility should be used with caution.  See system(4).
+stdout: *
+stdout: *	Examples:
+stdout: *
+stdout: *	To set variables in 'unix':
+stdout: *
+stdout: *		set nautopush=32
+stdout: *		set maxusers=40
+stdout: *
+stdout: *	To set a variable named 'debug' in the module named 'test_module'
+stdout: *
+stdout: *		set test_module:debug = 0x13
+stdout: 
+stdout: set zfs:zfs_arc_max=0x4002000
+stdout: set zfs:zfs_vdev_cache_size=0
+stdout: >>>>>iostat -xdp
+stdout:                  extended device statistics                  
+stdout: device     r/s    w/s   kr/s   kw/s wait actv  svc_t  %w  %b 
+stdout: sd0        2.7    6.8   49.3  110.4  0.0  0.0    1.7   0   1 
+stdout: sd0,a      2.7    6.8   49.3  110.4  0.0  0.0    1.7   0   1 
+stdout: sd0,c      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd0,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd0,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd0,r      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd1        0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd1,a      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd1,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd1,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd1,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd2        0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd3        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd3,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd3,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd3,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd3,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd4        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd4,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd4,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd4,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd4,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd5        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd5,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd5,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd5,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd5,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd6        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd6,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd6,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd6,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd6,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd7        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd7,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd7,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd7,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd7,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd8        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd8,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd8,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd8,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd8,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd9        0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd9,a      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd9,i      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd9,q      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd9,h      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd10       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd10,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd10,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd10,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd10,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd11       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd11,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd11,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd11,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd11,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd12       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd12,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd12,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd12,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd12,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd13       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd13,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd13,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd13,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd13,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd14       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd14,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd14,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd14,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd14,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd15       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd15,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd15,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd15,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd15,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd16       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd16,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd16,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd16,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd16,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd17       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd17,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd17,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd17,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd17,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd18       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd18,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd18,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd18,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd18,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd19       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd19,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd19,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd19,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd19,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd20       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd20,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd20,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd20,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd20,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd21       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd21,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd21,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd21,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd21,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd22       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd22,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd22,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd22,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd22,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd23       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd23,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd23,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd23,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd23,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd24       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd24,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd24,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd24,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd24,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd25       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd25,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd25,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd25,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd25,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd26       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd26,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd26,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd26,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd26,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd27       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd27,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd27,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd27,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd27,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd28       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd28,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd28,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd28,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd28,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd29       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd29,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd29,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd29,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd29,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd30       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd30,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd30,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd30,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd30,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd31       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd31,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd31,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd31,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd31,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd32       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd32,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd32,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd32,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd32,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd33       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd33,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd33,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd33,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd33,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd34       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd34,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd34,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd34,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd34,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd35       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd35,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd35,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd35,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd35,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd36       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd36,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd36,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd36,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd36,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd37       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd37,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd37,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd37,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd37,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd38       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd38,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd38,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd38,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd38,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd39       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd39,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd39,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd39,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd39,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd40       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd40,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd40,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd40,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd40,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd41       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd41,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd41,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd41,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd41,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd42       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd42,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd42,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd42,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd42,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd43       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd43,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd43,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd43,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd43,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd44       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd44,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd44,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd44,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd44,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd45       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd45,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd45,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd45,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd45,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd46       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd46,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd46,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd46,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd46,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd47       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd47,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd47,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd47,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd47,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd48       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd48,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd48,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd48,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd48,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd49       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd49,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd49,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd49,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd49,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd50       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd50,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd50,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd50,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd50,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd51       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd51,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd51,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd51,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd51,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd52       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd52,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd52,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd52,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd52,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd53       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd53,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd53,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd53,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd53,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd54       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd54,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd54,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd54,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd54,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd55       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd55,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd55,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd55,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd55,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd56       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd56,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd56,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd56,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd56,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd57       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd57,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd57,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd57,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd57,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd58       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd58,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd58,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd58,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd58,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd59       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd59,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd59,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd59,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd59,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd60       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd60,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd60,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd60,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd60,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd61       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd61,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd61,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd61,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd61,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd62       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd62,a     0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd62,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd62,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd62,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd63       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd63,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd63,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd63,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd63,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd64       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd64,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd64,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd64,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd64,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd65       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd65,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd65,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd65,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd65,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd66       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd66,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd66,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd66,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd66,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd67       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd67,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd67,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd67,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd67,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd68       6.3 1218.2  444.7 153317.6  0.1  3.0    2.5   5  32 
+stdout: sd68,a     6.3 1218.2  444.7 153317.7  0.1  3.0    2.5   5  32 
+stdout: sd68,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd68,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd68,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd69       6.3 1218.1  444.6 153317.7  0.1  3.0    2.5   5  32 
+stdout: sd69,a     6.3 1218.1  444.6 153317.7  0.1  3.0    2.5   5  32 
+stdout: sd69,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd69,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd69,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd70       0.1    1.7    0.4    2.2  0.0  0.0    0.0   0   0 
+stdout: sd70,a     0.1    1.7    0.4    2.2  0.0  0.0    0.0   0   0 
+stdout: sd70,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd70,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd70,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd71       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd71,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd71,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd71,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd71,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd72       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd72,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd72,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd72,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd72,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd73       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd73,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd73,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd73,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd73,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd74       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd74,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd74,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd74,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd74,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd75       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd75,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd75,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd75,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd75,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd76       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd76,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd76,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd76,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd76,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd77       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd77,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd77,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd77,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd77,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd78       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd78,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd78,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd78,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd78,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd79       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd79,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd79,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd79,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd79,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd80       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd80,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd80,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd80,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd80,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd81       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd81,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd81,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd81,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd81,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd82       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd82,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd82,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd82,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd82,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd83       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd83,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd83,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd83,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd83,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd84       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd84,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd84,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd84,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd84,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd85       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd85,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd85,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd85,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd85,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd86       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd86,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd86,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd86,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd86,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd87       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd87,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd87,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd87,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd87,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd88       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd88,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd88,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd88,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd88,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd89       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd89,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd89,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd89,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd89,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd90       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd90,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd90,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd90,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd90,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd91       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd91,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd91,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd91,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd91,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd92       0.1    1.4    0.4    1.3  0.0  0.0    0.0   0   0 
+stdout: sd92,a     0.1    1.4    0.4    1.3  0.0  0.0    0.0   0   0 
+stdout: sd92,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd92,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd92,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd93       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd93,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd93,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd93,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd93,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd94       1.1  198.8  125.2 25394.0  0.0  0.4    2.2   1   5 
+stdout: sd94,a     1.1  198.8  125.2 25394.0  0.0  0.4    2.2   1   5 
+stdout: sd94,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd94,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd94,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd95       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd95,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd95,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd95,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd95,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd96       0.2    0.0    3.1    0.0  0.0  0.0    0.1   0   0 
+stdout: sd96,a     0.1    0.0    1.2    0.0  0.0  0.0    0.1   0   0 
+stdout: sd96,i     0.0    0.0    2.0    0.0  0.0  0.0    0.4   0   0 
+stdout: sd96,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd96,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd97       0.2    0.0    3.1    0.0  0.0  0.0    0.2   0   0 
+stdout: sd97,a     0.1    0.0    1.2    0.0  0.0  0.0    0.1   0   0 
+stdout: sd97,i     0.0    0.0    2.0    0.0  0.0  0.0    0.8   0   0 
+stdout: sd97,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd97,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd98       0.2    0.0    3.1    0.0  0.0  0.0    0.1   0   0 
+stdout: sd98,a     0.1    0.0    1.2    0.0  0.0  0.0    0.1   0   0 
+stdout: sd98,i     0.0    0.0    2.0    0.0  0.0  0.0    0.4   0   0 
+stdout: sd98,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd98,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd99       0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd99,a     0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd99,i     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd99,q     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd99,h     0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd100      0.2    0.0    3.1    0.0  0.0  0.0    0.1   0   0 
+stdout: sd100,a    0.1    0.0    1.2    0.0  0.0  0.0    0.1   0   0 
+stdout: sd100,i    0.0    0.0    2.0    0.0  0.0  0.0    0.4   0   0 
+stdout: sd100,q    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd100,h    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd101      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd101,a    0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd101,i    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd101,q    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd101,h    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd102      0.2    0.0    3.1    0.0  0.0  0.0    0.1   0   0 
+stdout: sd102,a    0.1    0.0    1.2    0.0  0.0  0.0    0.1   0   0 
+stdout: sd102,i    0.0    0.0    2.0    0.0  0.0  0.0    0.4   0   0 
+stdout: sd102,q    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd102,h    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd103      0.1    0.0    0.1    0.0  0.0  0.0    0.0   0   0 
+stdout: sd103,a    0.1    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd103,i    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd103,q    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: sd103,h    0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+stdout: >>>>>iostat -xdnp
+stdout:                     extended device statistics              
+stdout:     r/s    w/s   kr/s   kw/s wait actv wsvc_t asvc_t  %w  %b device
+stdout:     2.7    6.8   49.3  110.4  0.0  0.0    0.5    1.1   0   1 c4t0d0
+stdout:     2.7    6.8   49.3  110.4  0.0  0.0    0.5    1.1   0   1 c4t0d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t0d0s2
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t0d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t0d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t0d0p1
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t2d0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t2d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t2d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t2d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd1,h
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c4t5d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3E9Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3E9Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3E9Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3E9Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd3,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3DD7d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3DD7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3DD7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500629F3DD7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd4,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2E45Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2E45Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2E45Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2E45Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd5,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A0Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A0Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A0Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A0Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd6,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5B7DBd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5B7DBd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5B7DBd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5B7DBd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd7,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA676Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA676Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA676Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA676Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd8,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F10Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F10Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F10Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F10Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd9,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC38F7d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC38F7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC38F7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC38F7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd10,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F027d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F027d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F027d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F027d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd11,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACAED3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACAED3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACAED3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACAED3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd12,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB9A3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB9A3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB9A3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB9A3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd13,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4A03d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4A03d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4A03d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4A03d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd14,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A5Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A5Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A5Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6A5Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd15,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42FFd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42FFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42FFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42FFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd16,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42F3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42F3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42F3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA42F3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd17,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F4E3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F4E3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F4E3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041A5F4E3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd18,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6D53d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6D53d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6D53d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA6D53d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd19,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB6C3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB6C3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB6C3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABB6C3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd20,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC7137d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC7137d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC7137d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AC7137d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd21,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACB8ABd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACB8ABd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACB8ABd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ACB8ABd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd22,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABBA1Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABBA1Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABBA1Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041ABBA1Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd23,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500001628d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500001628d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500001628d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500001628d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd24,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4577d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4577d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4577d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA4577d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd25,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA44B7d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA44B7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA44B7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041AA44B7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd26,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2FFBBd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2FFBBd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2FFBBd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A2FFBBd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd27,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A578C3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A578C3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A578C3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A578C3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd28,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A247DFd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A247DFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A247DFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50062A247DFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd29,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500009148d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500009148d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500009148d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE500009148d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd30,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE5AAAAFF00d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE5AAAAFF00d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE5AAAAFF00d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE5AAAAFF00d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd31,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBFBd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBFBd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBFBd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBFBd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd32,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C337d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C337d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C337d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C337d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd33,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C1D7d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C1D7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C1D7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C1D7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd34,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C2D3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C2D3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C2D3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C2D3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd35,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE50000943Cd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE50000943Cd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE50000943Cd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50014EE50000943Cd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd36,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF8Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF8Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF8Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF8Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd37,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C64Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C64Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C64Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C64Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd38,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CB2Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CB2Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CB2Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CB2Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd39,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF1Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF1Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF1Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CF1Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd40,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BB5Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BB5Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BB5Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BB5Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd41,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C97Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C97Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C97Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C97Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd42,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C38Bd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C38Bd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C38Bd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C38Bd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd43,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBDFd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBDFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBDFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CBDFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd44,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C4FFd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C4FFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C4FFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7C4FFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd45,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CCE3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CCE3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CCE3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7CCE3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd46,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BCBFd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BCBFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BCBFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50055E7BCBFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd47,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033D806CFd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033D806CFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033D806CFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033D806CFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd48,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003425DC5Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003425DC5Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003425DC5Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003425DC5Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd49,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C20417d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C20417d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C20417d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C20417d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd50,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1837Fd0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1837Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1837Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1837Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd51,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83904d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83904d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83904d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83904d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd52,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50026324367d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50026324367d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50026324367d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50026324367d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd53,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD18d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD18d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD18d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD18d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd54,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD0B7d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD0B7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD0B7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD0B7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd55,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83908d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83908d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83908d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C83908d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd56,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD5C3d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD5C3d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD5C3d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD5C3d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd57,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C60d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C60d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C60d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C60d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd58,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C80d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C80d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C80d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234C80d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd59,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAAFd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAAFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAAFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAAFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd60,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAC7d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAC7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAC7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCAC7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd61,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000A72030072FB1d0
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000A72030072FB1d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000A72030072FB1d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000A72030072FB1d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd62,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8C06Cd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8C06Cd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8C06Cd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8C06Cd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd63,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033ED6C9Fd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033ED6C9Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033ED6C9Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50033ED6C9Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd64,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD4D7d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD4D7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD4D7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD4D7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd65,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD087d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD087d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD087d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FD087d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd66,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A54d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A54d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A54d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A54d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd67,h
+stdout:     6.3 1218.2  444.7 153318.2  0.1  3.0    0.0    2.5   5  32 c2t50011731002E0A02d0
+stdout:     6.3 1218.2  444.7 153318.2  0.1  3.0    0.0    2.5   5  32 c2t50011731002E0A02d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A02d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A02d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd68,h
+stdout:     6.3 1218.1  444.6 153318.2  0.1  3.0    0.0    2.4   5  32 c2t50011731002E0A16d0
+stdout:     6.3 1218.1  444.6 153318.3  0.1  3.0    0.0    2.4   5  32 c2t50011731002E0A16d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A16d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A16d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd69,h
+stdout:     0.1    1.7    0.4    2.2  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0ADAd0
+stdout:     0.1    1.7    0.4    2.2  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0ADAd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0ADAd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0ADAd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd70,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0966d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0966d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0966d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0966d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd71,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C831FCd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C831FCd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C831FCd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039358C831FCd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd72,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1B443d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1B443d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1B443d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034C1B443d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd73,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500340F3E13d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500340F3E13d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500340F3E13d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500340F3E13d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd74,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88E60d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88E60d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88E60d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88E60d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd75,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50011731001CCC98d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50011731001CCC98d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50011731001CCC98d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50011731001CCC98d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd76,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AC90d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AC90d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AC90d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AC90d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd77,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234BACd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234BACd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234BACd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5001173100234BACd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd78,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A04d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A04d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A04d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C88A04d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd79,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ABB0d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ABB0d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ABB0d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ABB0d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd80,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003426453Fd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003426453Fd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003426453Fd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C5003426453Fd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd81,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FC8BBd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FC8BBd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FC8BBd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FC8BBd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd82,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C89A5Cd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C89A5Cd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C89A5Cd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C89A5Cd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd83,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034258D97d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034258D97d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034258D97d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50034258D97d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd84,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041E48FD7d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041E48FD7d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041E48FD7d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C50041E48FD7d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd85,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ACC0d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ACC0d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ACC0d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8ACC0d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd86,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCEEFd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCEEFd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCEEFd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000C500343FCEEFd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd87,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD40d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD40d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD40d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD40d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd88,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C88800d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C88800d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C88800d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C88800d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd89,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C898ECd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C898ECd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C898ECd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t5000039398C898ECd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd90,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD30d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD30d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD30d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c1t50000393A8C8AD30d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd91,h
+stdout:     0.1    1.4    0.4    1.3  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A46d0
+stdout:     0.1    1.4    0.4    1.3  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A46d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A46d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0A46d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd92,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E08E2d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E08E2d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E08E2d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E08E2d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd93,h
+stdout:     1.1  198.8  125.2 25394.9  0.0  0.4    0.0    2.2   1   5 c2t50011731002E0AA6d0
+stdout:     1.1  198.8  125.2 25395.0  0.0  0.4    0.0    2.2   1   5 c2t50011731002E0AA6d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0AA6d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E0AA6d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd94,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E09AAd0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E09AAd0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E09AAd0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c2t50011731002E09AAd0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd95,h
+stdout:     0.2    0.0    3.1    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0A01d0
+stdout:     0.1    0.0    1.2    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0A01d0s0
+stdout:     0.0    0.0    2.0    0.0  0.0  0.0    0.0    0.4   0   0 c3t50011731002E0A01d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0A01d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd96,h
+stdout:     0.2    0.0    3.1    0.0  0.0  0.0    0.0    0.2   0   0 c3t50011731002E0A15d0
+stdout:     0.1    0.0    1.2    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0A15d0s0
+stdout:     0.0    0.0    2.0    0.0  0.0  0.0    0.0    0.7   0   0 c3t50011731002E0A15d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0A15d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd97,h
+stdout:     0.2    0.0    3.1    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0AD9d0
+stdout:     0.1    0.0    1.2    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0AD9d0s0
+stdout:     0.0    0.0    2.0    0.0  0.0  0.0    0.0    0.4   0   0 c3t50011731002E0AD9d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0AD9d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd98,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0965d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0965d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0965d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0965d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd99,h
+stdout:     0.2    0.0    3.1    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0A45d0
+stdout:     0.1    0.0    1.2    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0A45d0s0
+stdout:     0.0    0.0    2.0    0.0  0.0  0.0    0.0    0.4   0   0 c3t50011731002E0A45d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0A45d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd100,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E08E1d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E08E1d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E08E1d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E08E1d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd101,h
+stdout:     0.2    0.0    3.1    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0AA5d0
+stdout:     0.1    0.0    1.2    0.0  0.0  0.0    0.0    0.1   0   0 c3t50011731002E0AA5d0s0
+stdout:     0.0    0.0    2.0    0.0  0.0  0.0    0.0    0.4   0   0 c3t50011731002E0AA5d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E0AA5d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd102,h
+stdout:     0.1    0.0    0.1    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E09A9d0
+stdout:     0.1    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E09A9d0s0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E09A9d0s8
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 c3t50011731002E09A9d0p0
+stdout:     0.0    0.0    0.0    0.0  0.0  0.0    0.0    0.0   0   0 sd103,h
+stdout: cat /kernel/drv/scsi_vhci.conf
+stdout: # CDDL HEADER START
+stdout: #
+stdout: # The contents of this file are subject to the terms of the
+stdout: # Common Development and Distribution License (the "License").
+stdout: # You may not use this file except in compliance with the License.
+stdout: #
+stdout: # You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+stdout: # or http://www.opensolaris.org/os/licensing.
+stdout: # See the License for the specific language governing permissions
+stdout: # and limitations under the License.
+stdout: #
+stdout: # When distributing Covered Code, include this CDDL HEADER in each
+stdout: # file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+stdout: # If applicable, add the following below this CDDL HEADER, with the
+stdout: # fields enclosed by brackets "[]" replaced with your own identifying
+stdout: # information: Portions Copyright [yyyy] [name of copyright owner]
+stdout: #
+stdout: # CDDL HEADER END
+stdout: #
+stdout: # Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+stdout: # Use is subject to license terms.
+stdout: #
+stdout: # Copyright 2013 Nexenta Systems, Inc. All rights reserved.
+stdout: 
+stdout: #
+stdout: #pragma ident	"%Z%%M%	%I%	%E% SMI"
+stdout: #
+stdout: name="scsi_vhci" class="root";
+stdout: 
+stdout: #
+stdout: # Load balancing global configuration: setting load-balance="none" will cause
+stdout: # all I/O to a given device (which supports multipath I/O) to occur via one
+stdout: # path.  Setting load-balance="round-robin" will cause each path to the device
+stdout: # to be used in turn.
+stdout: #
+stdout: load-balance="logical-block";
+stdout: 
+stdout: #
+stdout: # Automatic failback configuration
+stdout: # possible values are auto-failback="enable" or auto-failback="disable"
+stdout: auto-failback="enable";
+stdout: 
+stdout: #BEGIN: FAILOVER_MODULE_BLOCK (DO NOT MOVE OR DELETE)
+stdout: #
+stdout: # Declare scsi_vhci failover module paths with 'ddi-forceload' so that
+stdout: # they get loaded early enough to be available for scsi_vhci root use.
+stdout: #
+stdout: # NOTE: Correct operation depends on the value of 'ddi-forceload', this
+stdout: # value should not be changed. The ordering of entries is from
+stdout: # most-specific failover modules (with a "probe" implementation that is
+stdout: # completely VID/PID table based), to most generic (failover modules that
+stdout: # are based on T10 standards like TPGS). By convention the last part of a
+stdout: # failover module path, after "/scsi_vhci_", is called the
+stdout: # "failover-module-name", which begins with "f_" (like "f_asym_sun"). The
+stdout: # "failover-module-name" is also used in the override mechanism below.
+stdout: ddi-forceload =
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_asym_sun",
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_asym_lsi",
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_asym_emc",
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_sym_emc",
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_sym_hds",
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_sym",
+stdout: #	"misc/scsi_vhci/scsi_vhci_f_tpgs_tape",
+stdout: #	"misc/scsi_vhci/scsi_vhci_f_tape",
+stdout: 	"misc/scsi_vhci/scsi_vhci_f_tpgs";
+stdout: 
+stdout: #
+stdout: # For a device that has a GUID, discovered on a pHCI with mpxio enabled, vHCI
+stdout: # access also depends on one of the scsi_vhci failover modules accepting the
+stdout: # device.  The default way this occurs is by a failover module's "probe"
+stdout: # implementation (sfo_device_probe) indicating the device is supported under
+stdout: # scsi_vhci.  To override this default probe-oriented configuration in
+stdout: # order to
+stdout: #
+stdout: #    1)	establish support for a device not currently accepted under scsi_vhci
+stdout: #
+stdout: # or 2)	override the module selected by "probe"
+stdout: #
+stdout: # or 3)	disable scsi_vhci support for a device
+stdout: #
+stdout: # you can add a 'scsi-vhci-failover-override' tuple, as documented in
+stdout: # scsi_get_device_type_string(9F). For each tuple, the first part provides
+stdout: # basic device identity information (vid/pid) and the second part selects
+stdout: # the failover module by "failover-module-name". If you want to disable
+stdout: # scsi_vhci support for a device, use the special failover-module-name "NONE".
+stdout: # Currently, for each failover-module-name in 'scsi-vhci-failover-override'
+stdout: # (except "NONE") there needs to be a
+stdout: # "misc/scsi_vhci/scsi_vhci_<failover-module-name>" in 'ddi-forceload' above.
+stdout: #
+stdout: #	"                  111111"
+stdout: #	"012345670123456789012345",	"failover-module-name" or "NONE"
+stdout: #	"|-VID--||-----PID------|",
+stdout: # scsi-vhci-failover-override =
+stdout: #	"STK     FLEXLINE 400",		"f_asym_lsi",
+stdout: #	"SUN     T4",			"f_tpgs",
+stdout: #	"CME     XIRTEMMYS",		"NONE";
+stdout: #
+stdout: scsi-vhci-failover-override =
+stdout:     "3PARdataVV", "f_sym",
+stdout:     "COMPELNTCompellent Vol", "f_sym",
+stdout:     "DGC     VRAID", "f_asym_emc",
+stdout:     "HITACHI DF600F", "f_sym",
+stdout:     "HITACHI HU", "f_sym",          # Hitachi (GST) UltraStar's
+stdout:     "HGST    HU", "f_sym",          # Hitachi (GST) UltraStar's (Dell)
+stdout:     "HP      HSV2", "f_sym",
+stdout:     "HP      MB", "f_sym",          # HP, rebadged WD's
+stdout:     "HP      EG0600FBDSR", "f_sym", # HP, rebadged WD S25
+stdout:     "HP      OPEN", "f_sym",
+stdout:     "NETAPP  LUN", "f_sym",
+stdout:     "OCZ     TALOS", "f_sym",       # OCZ Talos SSD's, all
+stdout:     "Pliant  L", "f_sym",           # Pliant SSD's
+stdout:     "SAMSUNG MZ6ER", "f_sym",       # Samsung SSD
+stdout:     "SANDISK S", "f_sym",           # Sandisk BSSD
+stdout:     "SmrtStorT", "f_sym",           # SMART SSD
+stdout:     "STEC    Z", "f_sym",           # Zeus*
+stdout:     "STEC    S", "f_sym",           # STEC s840/842
+stdout:     "TOSHIBA M", "f_sym",           # Toshiba HDD/SSD's
+stdout:     "TOSHIBA AL13SEB900", "f_sym",  # Toshiba SAS HDD 900Gb
+stdout:     "TOSHIBA PX", "f_sym",          # Toshiba SSD's
+stdout:     "VIOLIN  SAN ARRAY", "f_sym",   # VIOLIN Memory SAN Array (iSCSI?)
+stdout:     "WD      W", "f_sym";           # WD HDD/SSD's
+stdout: #END: FAILOVER_MODULE_BLOCK (DO NOT MOVE OR DELETE)
+stdout: ps -ef | grep vdb
+stdout:     root 125690 125265   0 10:34:15 pts/3       0:00 /bin/bash /opt/vdbench/vdbench.bash -f vdb.conf
+stdout:     root 125716 125705   0 10:34:19 pts/3       0:00 grep vdb
+stdout:     root 125692 125690   0 10:34:15 pts/3       0:01 java -client -Xmx512m -Xms64m -cp /opt/vdbench/:/opt/vdbench/classes:/opt/vdben
+stdout:     root 125705 125692   0 10:34:17 pts/3       0:00 /bin/ksh /opt/vdbench/solx86/config.sh
+stdout:     root 125695 125692   0 10:34:16 pts/3       0:00 /bin/csh /opt/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-160405-10.3
+stdout:     root 125697 125695   0 10:34:16 pts/3       0:01 java -client -Xmx1024m -Xms128m -cp /opt/vdbench/:/opt/vdbench/classes:/opt/vdb
+stderr: prtdiag: not implemented on i86pc

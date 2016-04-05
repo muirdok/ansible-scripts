@@ -1,0 +1,1332 @@
+<pre>
+stdout/stderr for slave=localhost-0
+
+10:34:16.357 10:34:16.355 SlaveJvm execution parameter:  '-m localhost'
+10:34:16.357 10:34:16.356 SlaveJvm execution parameter:  '-n localhost-10-160405-10.34.15.796'
+10:34:16.357 10:34:16.356 SlaveJvm execution parameter:  '-l localhost-0'
+10:34:16.357 10:34:16.356 SlaveJvm execution parameter:  '-p 5570'
+10:34:16.357 10:34:16.356 SlaveJvm positional parameter: 'SlaveJvm'
+10:34:16.392 10:34:16.390 successfully connected to master localhost
+10:34:16.392 10:34:16.391 Connection to localhost using port 5570 successful
+10:34:16.796 10:34:16.796 execute(): /usr/bin/iostat -xp
+10:34:16.873 10:34:16.873 execute(): /usr/bin/iostat -xpn
+10:34:16.946 10:34:16.946 execute(): /usr/bin/ls -rl /dev/rdsk
+10:34:17.216 10:34:17.216 execute(): /usr/sbin/zpool status  tank
+10:34:17.263 10:34:17.263 execute(): /usr/sbin/zfs get all tank
+10:34:17.307 10:34:17.306 stdout: NAME  PROPERTY              VALUE                  SOURCE
+10:34:17.307 10:34:17.307 stdout: tank  type                  filesystem             -
+10:34:17.307 10:34:17.307 stdout: tank  creation              Tue Apr  5 10:33 2016  -
+10:34:17.307 10:34:17.307 stdout: tank  used                  25.9G                  -
+10:34:17.307 10:34:17.307 stdout: tank  available             695G                   -
+10:34:17.307 10:34:17.307 stdout: tank  referenced            25.9G                  -
+10:34:17.307 10:34:17.307 stdout: tank  compressratio         1.00x                  -
+10:34:17.308 10:34:17.307 stdout: tank  mounted               yes                    -
+10:34:17.308 10:34:17.307 stdout: tank  quota                 none                   default
+10:34:17.308 10:34:17.307 stdout: tank  reservation           none                   default
+10:34:17.308 10:34:17.307 stdout: tank  recordsize            128K                   default
+10:34:17.308 10:34:17.307 stdout: tank  mountpoint            /tank                  default
+10:34:17.308 10:34:17.307 stdout: tank  sharenfs              off                    default
+10:34:17.308 10:34:17.307 stdout: tank  checksum              on                     default
+10:34:17.308 10:34:17.307 stdout: tank  compression           off                    default
+10:34:17.308 10:34:17.307 stdout: tank  atime                 on                     default
+10:34:17.308 10:34:17.307 stdout: tank  devices               on                     default
+10:34:17.308 10:34:17.307 stdout: tank  exec                  on                     default
+10:34:17.309 10:34:17.307 stdout: tank  setuid                on                     default
+10:34:17.309 10:34:17.308 stdout: tank  readonly              off                    default
+10:34:17.309 10:34:17.308 stdout: tank  zoned                 off                    default
+10:34:17.309 10:34:17.308 stdout: tank  snapdir               hidden                 default
+10:34:17.309 10:34:17.308 stdout: tank  aclmode               discard                default
+10:34:17.309 10:34:17.308 stdout: tank  aclinherit            restricted             default
+10:34:17.309 10:34:17.308 stdout: tank  canmount              on                     default
+10:34:17.309 10:34:17.308 stdout: tank  xattr                 on                     default
+10:34:17.309 10:34:17.308 stdout: tank  copies                1                      default
+10:34:17.309 10:34:17.308 stdout: tank  version               5                      -
+10:34:17.310 10:34:17.308 stdout: tank  utf8only              off                    -
+10:34:17.310 10:34:17.308 stdout: tank  normalization         none                   -
+10:34:17.310 10:34:17.308 stdout: tank  casesensitivity       sensitive              -
+10:34:17.310 10:34:17.308 stdout: tank  vscan                 off                    default
+10:34:17.310 10:34:17.308 stdout: tank  nbmand                off                    default
+10:34:17.310 10:34:17.308 stdout: tank  sharesmb              off                    default
+10:34:17.310 10:34:17.308 stdout: tank  refquota              none                   default
+10:34:17.310 10:34:17.308 stdout: tank  refreservation        none                   default
+10:34:17.310 10:34:17.308 stdout: tank  primarycache          all                    default
+10:34:17.310 10:34:17.308 stdout: tank  secondarycache        all                    default
+10:34:17.310 10:34:17.308 stdout: tank  usedbysnapshots       0                      -
+10:34:17.311 10:34:17.308 stdout: tank  usedbydataset         25.9G                  -
+10:34:17.311 10:34:17.309 stdout: tank  usedbychildren        276K                   -
+10:34:17.311 10:34:17.309 stdout: tank  usedbyrefreservation  0                      -
+10:34:17.311 10:34:17.309 stdout: tank  logbias               latency                default
+10:34:17.311 10:34:17.309 stdout: tank  dedup                 off                    default
+10:34:17.311 10:34:17.309 stdout: tank  mlslabel              none                   default
+10:34:17.311 10:34:17.309 stdout: tank  sync                  standard               default
+10:34:17.311 10:34:17.309 stdout: tank  refcompressratio      1.00x                  -
+10:34:17.311 10:34:17.309 stdout: tank  written               25.9G                  -
+10:34:17.311 10:34:17.309 stdout: tank  logicalused           25.8G                  -
+10:34:17.311 10:34:17.309 stdout: tank  logicalreferenced     25.8G                  -
+10:34:17.312 10:34:17.309 stdout: tank  filesystem_limit      none                   default
+10:34:17.312 10:34:17.309 stdout: tank  snapshot_limit        none                   default
+10:34:17.312 10:34:17.309 stdout: tank  filesystem_count      none                   default
+10:34:17.312 10:34:17.309 stdout: tank  snapshot_count        none                   default
+10:34:17.312 10:34:17.309 stdout: tank  redundant_metadata    all                    default
+10:34:17.312 10:34:17.309 stdout: tank  zpl_meta_to_metadev   off                    default
+10:34:17.312 10:34:17.309 stdout: tank  wrc_mode              off                    default
+10:34:17.312 10:34:17.309 stdout: tank  smartcompression      on                     default
+10:34:17.345 10:34:17.345 Configuration interpretation took 0.58 seconds
+
+Link to Run Definitions:         <A HREF="#_1430830">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_22995437">rd1 For loops: None</A>
+                                 <A HREF="#_4377294">format_for_rd2 For loops: None</A>
+                                 <A HREF="#_17870600">rd2 For loops: None</A>
+
+10:34:19.275 10:34:19.275 Beginning of run setup
+10:34:19.276 10:34:19.275 **********************
+10:34:19.276 
+10:34:19.276 
+10:34:19.289 10:34:19.289 createCompressionPattern() seed: 0 comp_ratio:   1.00 limit:   0.00
+10:34:19.333 10:34:19.333 File '/var/adm/messages.0' does not exist. Monitoring bypassed
+10:34:19.348 10:34:19.348 Deleting old file structure.
+10:34:19.356 10:34:19.355 Completed the creation of the directory list: 340 directories
+10:34:19.358 10:34:19.358 Memory total Java heap:  123.750 MB; Free:   91.454 MB; Used:   32.296 MB;
+10:34:19.433 10:34:19.432 checkMemory()
+10:34:19.433 10:34:19.433 Memory total Java heap:  123.875 MB; Free:  111.564 MB; Used:   12.311 MB;
+10:34:19.433 10:34:19.433 VdbCount statistics for CheckMemory
+10:34:19.433 10:34:19.433 Java heap:  123.875 /  111.564 /   12.311
+10:34:19.434 10:34:19.434 Class                               added   cloned   serial   finals     left
+10:34:19.434 10:34:19.434 VdbObject.finalize() not active!
+10:34:19.466 10:34:19.466 Generated    21760 file names; total anchor size: 680g
+10:34:19.466 10:34:19.466 VdbCount statistics for initializeFileAnchor
+10:34:19.466 10:34:19.466 Java heap:  123.875 /  110.388 /   13.487
+10:34:19.467 10:34:19.466 Class                               added   cloned   serial   finals     left
+10:34:19.467 10:34:19.466 VdbObject.finalize() not active!
+10:34:19.467 10:34:19.467 Writing control file for anchor=/tank/fsload at start of run.
+10:34:19.518 10:34:19.517 Completed control file for anchor=/tank/fsload at start of run.  dirs: 340/0 files: 21760/0 sizes: 680g/0.0/0/0.0
+10:34:19.526 10:34:19.526 Skew for fwd=format,fsd=fsd1,operation=read:    100.0
+10:34:19.553 10:34:19.553 Started 8 threads for fwd=format,fsd=fsd1,operation=read
+10:34:19.553 10:34:19.553 Started 8 FwgThreads
+10:34:19.553 10:34:19.553 Waiting for task synchronization
+10:34:19.553 10:34:19.553 task_wait_start_complete() end
+
+<a name="_1430830"></a><i><b>10:34:20.002 Starting RD=format_for_rd1</b></i>
+
+10:34:20.004 10:34:20.004 task_run_all(): 9 tasks
+10:34:21.915 10:34:21.914 Message to master: anchor=/tank/fsload deleted 892 files; 489/sec
+10:34:21.915 10:34:21.915 Message to master: anchor=/tank/fsload deleted 340 directories; 186/sec
+10:34:21.930 10:34:21.929 Message to master: anchor=/tank/fsload mkdir complete.
+10:34:29.345 10:34:29.345 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:34:29.345 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm: detach: start. cmd <DETACH>
+10:34:29.345 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(0): fcsm_cleanup_port: entered
+10:34:29.345 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(0): enque_job: job 0xffffff9624562f80 is normal
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(0): process_job: Waiting for sync job <ffffff9624562f80> completion
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.warning] WARNING: fcsm(0): job_thread: job code <JOB PORT SHUTDOWN>
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(6): fcsm_cleanup_port: entered
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(6): enque_job: job 0xffffff9624562f80 is normal
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(6): process_job: Waiting for sync job <ffffff9624562f80> completion
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.warning] WARNING: fcsm(6): job_thread: job code <JOB PORT SHUTDOWN>
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(4): fcsm_cleanup_port: entered
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(4): enque_job: job 0xffffff9624562f80 is normal
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(4): process_job: Waiting for sync job <ffffff9624562f80> completion
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.warning] WARNING: fcsm(4): job_thread: job code <JOB PORT SHUTDOWN>
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(2): fcsm_cleanup_port: entered
+10:34:29.346 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(2): enque_job: job 0xffffff9624562f80 is normal
+10:34:29.347 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(2): process_job: Waiting for sync job <ffffff9624562f80> completion
+10:34:29.347 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.warning] WARNING: fcsm(2): job_thread: job code <JOB PORT SHUTDOWN>
+10:34:29.347 10:34:29.345 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(10): fcsm_cleanup_port: entered
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(10): enque_job: job 0xffffff9624562f80 is normal
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(10): process_job: Waiting for sync job <ffffff9624562f80> completion
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.warning] WARNING: fcsm(10): job_thread: job code <JOB PORT SHUTDOWN>
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(8): fcsm_cleanup_port: entered
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(8): enque_job: job 0xffffff9624562f80 is normal
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm(8): process_job: Waiting for sync job <ffffff9624562f80> completion
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.warning] WARNING: fcsm(8): job_thread: job code <JOB PORT SHUTDOWN>
+10:34:29.347 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm: detach: end. cmd 0x0, rval 0x0
+10:34:29.348 10:34:29.346 sendMessageToConsole: /var/adm/messages: Apr  5 10:34:27 nodeb fcsm: [ID 517869 kern.info] fcsm: _fini
+10:34:29.348 10:34:29.346 sendMessageToConsole: 
+10:34:59.572 10:34:59.571 Message to master: anchor=/tank/fsload: Created 651 of 21760 files (2.99%)
+10:35:32.114 10:35:32.113 Message to master: anchor=/tank/fsload: Created 1085 of 21760 files (4.99%)
+10:35:44.401 10:35:44.400 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:35:44.405 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:35:44.405 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:35:44.405 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:35:44.406 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:35:44.407 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:43 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:35:44.407 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:35:44.407 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:35:44.407 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:35:44.407 10:35:44.401 sendMessageToConsole: /var/adm/messages: Apr  5 10:35:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:35:44.407 10:35:44.401 sendMessageToConsole: 
+10:36:15.128 10:36:15.128 Message to master: anchor=/tank/fsload: Created 1519 of 21760 files (6.98%)
+10:36:45.359 10:36:45.359 Message to master: anchor=/tank/fsload: Created 1953 of 21760 files (8.98%)
+10:37:26.507 10:37:26.507 Message to master: anchor=/tank/fsload: Created 2387 of 21760 files (10.97%)
+10:37:44.422 10:37:44.422 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:37:44.423 10:37:44.422 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:37:44.423 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:37:44.423 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:37:44.423 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:43 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:37:44.424 10:37:44.423 sendMessageToConsole: /var/adm/messages: Apr  5 10:37:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:37:44.424 10:37:44.423 sendMessageToConsole: 
+10:38:06.996 10:38:06.996 Message to master: anchor=/tank/fsload: Created 2821 of 21760 files (12.96%)
+10:38:47.933 10:38:47.933 Message to master: anchor=/tank/fsload: Created 3255 of 21760 files (14.96%)
+10:39:27.994 10:39:27.994 Message to master: anchor=/tank/fsload: Created 3689 of 21760 files (16.95%)
+10:39:44.440 10:39:44.440 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:39:44.440 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:43 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:39:44.441 10:39:44.440 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:39:44.441 10:39:44.441 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:39:44.442 10:39:44.441 sendMessageToConsole: /var/adm/messages: Apr  5 10:39:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:39:44.442 10:39:44.441 sendMessageToConsole: 
+10:39:58.955 10:39:58.955 Message to master: anchor=/tank/fsload: Created 3906 of 21760 files (17.95%)
+10:40:48.080 10:40:48.080 Message to master: anchor=/tank/fsload: Created 4340 of 21760 files (19.94%)
+10:41:23.221 10:41:23.221 Message to master: anchor=/tank/fsload: Created 4774 of 21760 files (21.94%)
+10:41:44.457 10:41:44.456 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:41:44.457 10:41:44.456 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:41:44.457 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:41:44.457 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:41:44.457 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:41:44.457 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:41:44.457 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:43 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:41:44.458 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:41:44.459 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:41:44.459 10:41:44.457 sendMessageToConsole: /var/adm/messages: Apr  5 10:41:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:41:44.459 10:41:44.457 sendMessageToConsole: 
+10:42:04.479 10:42:04.479 Message to master: anchor=/tank/fsload: Created 5208 of 21760 files (23.93%)
+10:42:45.280 10:42:45.280 Message to master: anchor=/tank/fsload: Created 5642 of 21760 files (25.93%)
+10:43:25.732 10:43:25.732 Message to master: anchor=/tank/fsload: Created 6076 of 21760 files (27.92%)
+10:43:44.472 10:43:44.472 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:43:44.473 10:43:44.472 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:43 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:43:44.474 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:43:44.475 10:43:44.473 sendMessageToConsole: /var/adm/messages: Apr  5 10:43:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:43:44.475 10:43:44.473 sendMessageToConsole: 
+10:44:12.114 10:44:12.114 Message to master: anchor=/tank/fsload: Created 6510 of 21760 files (29.92%)
+10:44:50.669 10:44:50.669 Message to master: anchor=/tank/fsload: Created 6944 of 21760 files (31.91%)
+10:45:35.560 10:45:35.560 Message to master: anchor=/tank/fsload: Created 7378 of 21760 files (33.91%)
+10:45:44.487 10:45:44.487 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:45:44.488 10:45:44.487 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:45:44.488 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:45:44.488 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:45:44.488 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:45:44.488 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:45:44.489 10:45:44.488 sendMessageToConsole: /var/adm/messages: Apr  5 10:45:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:45:44.489 10:45:44.488 sendMessageToConsole: 
+10:46:16.560 10:46:16.560 Message to master: anchor=/tank/fsload: Created 7812 of 21760 files (35.90%)
+10:46:57.025 10:46:57.024 Message to master: anchor=/tank/fsload: Created 8246 of 21760 files (37.90%)
+10:47:32.096 10:47:32.095 Message to master: anchor=/tank/fsload: Created 8680 of 21760 files (39.89%)
+10:47:39.502 10:47:39.502 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:47:39.503 10:47:39.502 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:37 nodeb genunix: [ID 603404 kern.notice] NOTICE: core_log: zpool[128542] core dumped: /var/cores/core.zpool.128542.1459878457
+10:47:39.503 10:47:39.502 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:37 nodeb genunix: [ID 603404 kern.notice] NOTICE: core_log: zpool[128544] core dumped: /var/cores/core.zpool.128544.1459878457
+10:47:39.503 10:47:39.502 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:37 nodeb NEF: [ID 702911 daemon.notice] NEF zpool daemon.info trim job finished or stopped on pool tank
+10:47:39.503 10:47:39.502 sendMessageToConsole: 
+10:47:44.516 10:47:44.516 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:47:44.516 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:47:44.516 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:47:44.516 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:47:44.516 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:47:44.516 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:47:44.517 10:47:44.516 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:47:44.517 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:47:44.517 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:47:44.517 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:47:44.518 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:47:44.518 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:47:44.518 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:47:44.518 10:47:44.517 sendMessageToConsole: /var/adm/messages: Apr  5 10:47:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:47:44.518 10:47:44.517 sendMessageToConsole: 
+10:48:12.450 10:48:12.450 Message to master: anchor=/tank/fsload: Created 9331 of 21760 files (42.88%)
+10:48:52.626 10:48:52.626 Message to master: anchor=/tank/fsload: Created 9982 of 21760 files (45.87%)
+10:49:32.729 10:49:32.728 Message to master: anchor=/tank/fsload: Created 10633 of 21760 files (48.86%)
+10:49:44.574 10:49:44.574 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:49:44.583 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:49:44.583 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:49:44.584 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:49:44.584 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:49:44.584 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:49:44.584 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:49:44.584 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:49:44.584 10:49:44.574 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:49:44.584 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:49:44.584 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:49:44.584 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:49:44.585 10:49:44.575 sendMessageToConsole: /var/adm/messages: Apr  5 10:49:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:49:44.586 10:49:44.575 sendMessageToConsole: 
+10:50:12.467 10:50:12.467 Message to master: anchor=/tank/fsload: Created 11284 of 21760 files (51.86%)
+10:50:52.798 10:50:52.798 Message to master: anchor=/tank/fsload: Created 11935 of 21760 files (54.85%)
+10:51:33.186 10:51:33.186 Message to master: anchor=/tank/fsload: Created 12586 of 21760 files (57.84%)
+10:51:44.590 10:51:44.590 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:51:44.592 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:51:44.592 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:51:44.592 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:51:44.593 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:51:44.594 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:51:44.594 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:51:44.594 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:51:44.594 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:51:44.594 10:51:44.590 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:51:44.594 10:51:44.591 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:51:44.594 10:51:44.591 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:51:44.594 10:51:44.591 sendMessageToConsole: /var/adm/messages: Apr  5 10:51:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:51:44.594 10:51:44.591 sendMessageToConsole: 
+10:52:13.855 10:52:13.855 Message to master: anchor=/tank/fsload: Created 13237 of 21760 files (60.83%)
+10:52:45.464 10:52:45.464 Message to master: anchor=/tank/fsload: Created 13671 of 21760 files (62.83%)
+10:53:25.963 10:53:25.963 Message to master: anchor=/tank/fsload: Created 14322 of 21760 files (65.82%)
+10:53:44.605 10:53:44.605 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:53:44.609 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:53:44.610 10:53:44.605 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:53:44.611 10:53:44.606 sendMessageToConsole: /var/adm/messages: Apr  5 10:53:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:53:44.611 10:53:44.606 sendMessageToConsole: 
+10:53:57.249 10:53:57.249 Message to master: anchor=/tank/fsload: Created 14756 of 21760 files (67.81%)
+10:54:37.081 10:54:37.081 Message to master: anchor=/tank/fsload: Created 15407 of 21760 files (70.80%)
+10:55:16.766 10:55:16.766 Message to master: anchor=/tank/fsload: Created 16058 of 21760 files (73.80%)
+10:55:44.621 10:55:44.620 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:55:44.631 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:55:44.632 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:55:44.633 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:55:44.633 10:55:44.621 sendMessageToConsole: /var/adm/messages: Apr  5 10:55:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:55:44.633 10:55:44.621 sendMessageToConsole: 
+10:55:56.473 10:55:56.473 Message to master: anchor=/tank/fsload: Created 16709 of 21760 files (76.79%)
+10:56:36.204 10:56:36.204 Message to master: anchor=/tank/fsload: Created 17360 of 21760 files (79.78%)
+10:57:15.846 10:57:15.845 Message to master: anchor=/tank/fsload: Created 18011 of 21760 files (82.77%)
+10:57:44.641 10:57:44.640 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:57:44.651 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:57:44.651 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:57:44.651 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:57:44.651 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:57:44.651 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:57:44.651 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:57:44.652 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:57:44.653 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:57:44.653 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:57:44.653 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:57:44.653 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:57:44.653 10:57:44.641 sendMessageToConsole: /var/adm/messages: Apr  5 10:57:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:57:44.653 10:57:44.641 sendMessageToConsole: 
+10:57:55.571 10:57:55.570 Message to master: anchor=/tank/fsload: Created 18662 of 21760 files (85.76%)
+10:58:35.381 10:58:35.381 Message to master: anchor=/tank/fsload: Created 19313 of 21760 files (88.75%)
+10:59:15.206 10:59:15.206 Message to master: anchor=/tank/fsload: Created 19964 of 21760 files (91.75%)
+10:59:44.656 10:59:44.656 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:59:44.661 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+10:59:44.661 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+10:59:44.662 10:59:44.656 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+10:59:44.662 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+10:59:44.662 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+10:59:44.662 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+10:59:44.663 10:59:44.657 sendMessageToConsole: /var/adm/messages: Apr  5 10:59:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+10:59:44.663 10:59:44.657 sendMessageToConsole: 
+10:59:57.381 10:59:57.380 Message to master: anchor=/tank/fsload: Created 20615 of 21760 files (94.74%)
+11:00:38.705 11:00:38.705 Message to master: anchor=/tank/fsload: Created 21266 of 21760 files (97.73%)
+11:01:15.716 11:01:15.716 Message to master: anchor=/tank/fsload: Created 21700 of 21760 files (99.72%)
+11:01:20.788 11:01:20.788 Message to master: anchor=/tank/fsload create complete.
+11:01:21.805 11:01:21.805 
+11:01:21.805 11:01:21.805 Miscellaneous statistics:
+11:01:21.805 11:01:21.805 FILE_CREATES        Files created:                             21760
+11:01:21.805 11:01:21.805 DIRECTORY_CREATES   Directories created:                         340
+11:01:21.806 11:01:21.805 FILE_DELETES        Files deleted:                               892
+11:01:21.806 11:01:21.805 DIRECTORY_DELETES   Directories deletes:                         340
+11:01:21.806 11:01:21.806 WRITE_OPENS         Files opened for write activity:           21760
+11:01:21.806 11:01:21.806 DIR_EXISTS          Directory may not exist (yet):                 9
+11:01:21.806 11:01:21.806 FILE_CLOSES         Close requests:                            21760
+11:01:21.806 11:01:21.806 
+11:01:21.806 11:01:21.806 Memory total Java heap:  123.875 MB; Free:   85.386 MB; Used:   38.489 MB;
+11:01:21.806 11:01:21.806 Maximum native memory allocation:      2097152; Current allocation:      2097152
+11:01:22.093 11:01:22.092 Writing control file for anchor=/tank/fsload at end of run.
+11:01:22.166 11:01:22.166 Completed control file for anchor=/tank/fsload at end of run.  dirs: 340/340 files: 21760/21760 sizes: 680g/680g/21760/680g
+11:01:22.166 11:01:22.166 End of run
+11:01:22.166 11:01:22.166 **********
+11:01:22.166 
+11:01:22.167 
+11:01:22.256 11:01:22.256 Beginning of run setup
+11:01:22.256 11:01:22.256 **********************
+11:01:22.256 
+11:01:22.256 
+11:01:22.268 11:01:22.268 createCompressionPattern() seed: 0 comp_ratio:   1.00 limit:   0.00
+11:01:22.316 11:01:22.316 Reading control file for anchor=/tank/fsload
+11:01:22.317 11:01:22.317 Completed reading control file.
+11:01:22.320 11:01:22.320 Completed the creation of the directory list: 340 directories
+11:01:22.321 11:01:22.321 Memory total Java heap:  123.875 MB; Free:   82.997 MB; Used:   40.878 MB;
+11:01:22.411 11:01:22.411 checkMemory()
+11:01:22.412 11:01:22.411 Memory total Java heap:  123.875 MB; Free:  110.533 MB; Used:   13.342 MB;
+11:01:22.412 11:01:22.412 VdbCount statistics for CheckMemory
+11:01:22.412 11:01:22.412 Java heap:  123.875 /  110.533 /   13.342
+11:01:22.412 11:01:22.412 Class                               added   cloned   serial   finals     left
+11:01:22.413 11:01:22.412 VdbObject.finalize() not active!
+11:01:22.435 11:01:22.435 Generated    21760 file names; total anchor size: 680g
+11:01:22.435 11:01:22.435 VdbCount statistics for initializeFileAnchor
+11:01:22.436 11:01:22.435 Java heap:  123.875 /  108.897 /   14.978
+11:01:22.436 11:01:22.436 Class                               added   cloned   serial   finals     left
+11:01:22.436 11:01:22.436 VdbObject.finalize() not active!
+11:01:22.436 11:01:22.436 Writing control file for anchor=/tank/fsload at start of run.
+11:01:22.478 11:01:22.478 Completed control file for anchor=/tank/fsload at start of run.  dirs: 340/340 files: 21760/21760 sizes: 680g/680g/0/0.0
+11:01:22.481 11:01:22.481 During anchor creation for anchor=/tank/fsload there were 340 directories and 21760 files
+11:01:22.481 11:01:22.481 Skew for fwd=fwd1,fsd=fsd1,operation=read:    100.0
+11:01:22.527 11:01:22.526 Started 32 threads for fwd=fwd1,fsd=fsd1,operation=read
+11:01:22.527 11:01:22.527 Started 32 FwgThreads
+11:01:22.527 11:01:22.527 Waiting for task synchronization
+11:01:22.527 11:01:22.527 task_wait_start_complete() end
+
+<a name="_22995437"></a><i><b>11:01:23.001 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+11:01:23.002 11:01:23.002 task_run_all(): 33 tasks
+11:01:44.673 11:01:44.672 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:01:44.682 11:01:44.672 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:01:44.683 11:01:44.672 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:01:44.683 11:01:44.672 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:01:44.683 11:01:44.672 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:01:44.683 11:01:44.672 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:01:44.683 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:01:44.684 11:01:44.673 sendMessageToConsole: /var/adm/messages: Apr  5 11:01:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:01:44.685 11:01:44.673 sendMessageToConsole: 
+11:01:54.339 11:01:54.339 
+11:01:54.339 11:01:54.339 Miscellaneous statistics:
+11:01:54.339 11:01:54.339 WRITE_OPENS         Files opened for write activity:             457
+11:01:54.339 11:01:54.339 FILE_CLOSES         Close requests:                              457
+11:01:54.339 11:01:54.339 
+11:01:54.339 11:01:54.339 Memory total Java heap:  124.000 MB; Free:  105.994 MB; Used:   18.006 MB;
+11:01:54.340 11:01:54.339 Maximum native memory allocation:      4194304; Current allocation:      4194304
+11:01:54.340 11:01:54.340 Writing control file for anchor=/tank/fsload at end of run.
+11:01:54.428 11:01:54.428 Completed control file for anchor=/tank/fsload at end of run.  dirs: 340/340 files: 21760/21760 sizes: 680g/680g/453/14.156g
+11:01:54.428 11:01:54.428 End of run
+11:01:54.429 11:01:54.428 **********
+11:01:54.429 
+11:01:54.429 
+11:01:54.507 11:01:54.506 Beginning of run setup
+11:01:54.507 11:01:54.507 **********************
+11:01:54.507 
+11:01:54.507 
+11:01:54.520 11:01:54.520 createCompressionPattern() seed: 0 comp_ratio:   1.00 limit:   0.00
+11:01:54.564 11:01:54.564 Deleting old file structure.
+11:01:54.567 11:01:54.567 Completed the creation of the directory list: 340 directories
+11:01:54.568 11:01:54.568 Memory total Java heap:  124.000 MB; Free:  103.849 MB; Used:   20.151 MB;
+11:01:54.635 11:01:54.635 checkMemory()
+11:01:54.636 11:01:54.636 Memory total Java heap:  123.875 MB; Free:  108.769 MB; Used:   15.106 MB;
+11:01:54.636 11:01:54.636 VdbCount statistics for CheckMemory
+11:01:54.637 11:01:54.637 Java heap:  123.875 /  108.769 /   15.106
+11:01:54.638 11:01:54.638 Class                               added   cloned   serial   finals     left
+11:01:54.638 11:01:54.638 VdbObject.finalize() not active!
+11:01:54.665 11:01:54.664 Generated    21760 file names; total anchor size: 680g
+11:01:54.665 11:01:54.664 VdbCount statistics for initializeFileAnchor
+11:01:54.665 11:01:54.665 Java heap:  123.875 /  108.565 /   15.310
+11:01:54.665 11:01:54.665 Class                               added   cloned   serial   finals     left
+11:01:54.665 11:01:54.665 VdbObject.finalize() not active!
+11:01:54.665 11:01:54.665 Writing control file for anchor=/tank/fsload at start of run.
+11:01:54.705 11:01:54.705 Completed control file for anchor=/tank/fsload at start of run.  dirs: 340/0 files: 21760/0 sizes: 680g/0.0/0/0.0
+11:01:54.705 11:01:54.705 Skew for fwd=format,fsd=fsd1,operation=read:    100.0
+11:01:54.717 11:01:54.717 Started 8 threads for fwd=format,fsd=fsd1,operation=read
+11:01:54.717 11:01:54.717 Started 8 FwgThreads
+11:01:54.717 11:01:54.717 Waiting for task synchronization
+11:01:54.717 11:01:54.717 task_wait_start_complete() end
+
+<a name="_4377294"></a><i><b>11:01:55.001 Starting RD=format_for_rd2</b></i>
+
+11:01:55.002 11:01:55.002 task_run_all(): 9 tasks
+11:02:17.434 11:02:17.433 deleteOldStuff(): it took 22.403 seconds to delete all old files and directories.
+11:02:17.434 11:02:17.434 Message to master: anchor=/tank/fsload deleted 21760 files; 971/sec
+11:02:17.434 11:02:17.434 Message to master: anchor=/tank/fsload deleted 340 directories; 15/sec
+11:02:17.448 11:02:17.448 Message to master: anchor=/tank/fsload mkdir complete.
+11:02:59.662 11:02:59.662 Message to master: anchor=/tank/fsload: Created 434 of 21760 files (1.99%)
+11:03:39.539 11:03:39.539 Message to master: anchor=/tank/fsload: Created 1085 of 21760 files (4.99%)
+11:03:44.697 11:03:44.697 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:03:44.698 11:03:44.697 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:03:44.699 11:03:44.698 sendMessageToConsole: /var/adm/messages: Apr  5 11:03:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:03:44.700 11:03:44.698 sendMessageToConsole: 
+11:04:20.342 11:04:20.341 Message to master: anchor=/tank/fsload: Created 1736 of 21760 files (7.98%)
+11:05:00.431 11:05:00.430 Message to master: anchor=/tank/fsload: Created 2387 of 21760 files (10.97%)
+11:05:40.289 11:05:40.289 Message to master: anchor=/tank/fsload: Created 3038 of 21760 files (13.96%)
+11:05:44.712 11:05:44.712 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:05:44.712 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:05:44.712 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:05:44.712 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:05:44.713 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:05:44.714 11:05:44.712 sendMessageToConsole: /var/adm/messages: Apr  5 11:05:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:05:44.714 11:05:44.712 sendMessageToConsole: 
+11:06:20.195 11:06:20.195 Message to master: anchor=/tank/fsload: Created 3689 of 21760 files (16.95%)
+11:06:59.951 11:06:59.951 Message to master: anchor=/tank/fsload: Created 4340 of 21760 files (19.94%)
+11:07:39.797 11:07:39.797 Message to master: anchor=/tank/fsload: Created 4991 of 21760 files (22.94%)
+11:07:44.727 11:07:44.726 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:07:44.727 11:07:44.726 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:07:44.727 11:07:44.726 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:07:44.727 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:07:44.727 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:07:44.727 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:07:44.727 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:07:44.727 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:07:44.727 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:07:44.728 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:07:44.729 11:07:44.727 sendMessageToConsole: /var/adm/messages: Apr  5 11:07:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:07:44.729 11:07:44.727 sendMessageToConsole: 
+11:08:20.590 11:08:20.590 Message to master: anchor=/tank/fsload: Created 5642 of 21760 files (25.93%)
+11:09:01.208 11:09:01.207 Message to master: anchor=/tank/fsload: Created 6293 of 21760 files (28.92%)
+11:09:41.712 11:09:41.712 Message to master: anchor=/tank/fsload: Created 6944 of 21760 files (31.91%)
+11:09:44.784 11:09:44.784 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:09:44.784 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:09:44.784 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:09:44.785 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:09:44.786 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:09:44.787 11:09:44.784 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:09:44.787 11:09:44.785 sendMessageToConsole: /var/adm/messages: Apr  5 11:09:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:09:44.787 11:09:44.785 sendMessageToConsole: 
+11:10:22.126 11:10:22.126 Message to master: anchor=/tank/fsload: Created 7595 of 21760 files (34.90%)
+11:11:02.759 11:11:02.759 Message to master: anchor=/tank/fsload: Created 8246 of 21760 files (37.90%)
+11:11:44.433 11:11:44.432 Message to master: anchor=/tank/fsload: Created 8897 of 21760 files (40.89%)
+11:11:44.801 11:11:44.801 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:42 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:11:44.802 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:11:44.803 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:11:44.803 11:11:44.801 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:11:44.803 11:11:44.802 sendMessageToConsole: /var/adm/messages: Apr  5 11:11:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:11:44.803 11:11:44.802 sendMessageToConsole: 
+11:12:25.026 11:12:25.026 Message to master: anchor=/tank/fsload: Created 9548 of 21760 files (43.88%)
+11:13:05.630 11:13:05.630 Message to master: anchor=/tank/fsload: Created 10199 of 21760 files (46.87%)
+11:13:44.816 11:13:44.816 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:13:44.821 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:13:44.821 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:13:44.821 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:13:44.821 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:13:44.822 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:13:44.823 11:13:44.816 sendMessageToConsole: /var/adm/messages: Apr  5 11:13:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:13:44.823 11:13:44.816 sendMessageToConsole: 
+11:13:45.682 11:13:45.682 Message to master: anchor=/tank/fsload: Created 10850 of 21760 files (49.86%)
+11:14:26.307 11:14:26.307 Message to master: anchor=/tank/fsload: Created 11501 of 21760 files (52.85%)
+11:15:07.455 11:15:07.454 Message to master: anchor=/tank/fsload: Created 12152 of 21760 files (55.85%)
+11:15:44.831 11:15:44.831 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:15:44.836 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:15:44.837 11:15:44.831 sendMessageToConsole: /var/adm/messages: Apr  5 11:15:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:15:44.837 11:15:44.831 sendMessageToConsole: 
+11:15:47.930 11:15:47.929 Message to master: anchor=/tank/fsload: Created 12803 of 21760 files (58.84%)
+11:16:28.741 11:16:28.741 Message to master: anchor=/tank/fsload: Created 13454 of 21760 files (61.83%)
+11:17:09.618 11:17:09.618 Message to master: anchor=/tank/fsload: Created 14105 of 21760 files (64.82%)
+11:17:44.845 11:17:44.845 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:17:44.855 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:17:44.856 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:17:44.857 11:17:44.845 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:17:44.857 11:17:44.846 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:17:44.857 11:17:44.846 sendMessageToConsole: /var/adm/messages: Apr  5 11:17:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:17:44.857 11:17:44.846 sendMessageToConsole: 
+11:17:51.428 11:17:51.428 Message to master: anchor=/tank/fsload: Created 14756 of 21760 files (67.81%)
+11:18:32.257 11:18:32.257 Message to master: anchor=/tank/fsload: Created 15407 of 21760 files (70.80%)
+11:19:12.760 11:19:12.760 Message to master: anchor=/tank/fsload: Created 16058 of 21760 files (73.80%)
+11:19:44.871 11:19:44.871 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:19:44.874 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:19:44.875 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:19:44.876 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:19:44.876 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:19:44.876 11:19:44.871 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:19:44.876 11:19:44.872 sendMessageToConsole: /var/adm/messages: Apr  5 11:19:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:19:44.877 11:19:44.872 sendMessageToConsole: 
+11:19:53.587 11:19:53.587 Message to master: anchor=/tank/fsload: Created 16709 of 21760 files (76.79%)
+11:20:34.186 11:20:34.186 Message to master: anchor=/tank/fsload: Created 17360 of 21760 files (79.78%)
+11:21:15.198 11:21:15.197 Message to master: anchor=/tank/fsload: Created 18011 of 21760 files (82.77%)
+11:21:44.886 11:21:44.886 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:21:44.889 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:21:44.889 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:21:44.890 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:21:44.891 11:21:44.886 sendMessageToConsole: /var/adm/messages: Apr  5 11:21:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:21:44.892 11:21:44.886 sendMessageToConsole: 
+11:21:55.724 11:21:55.723 Message to master: anchor=/tank/fsload: Created 18662 of 21760 files (85.76%)
+11:22:37.020 11:22:37.020 Message to master: anchor=/tank/fsload: Created 19313 of 21760 files (88.75%)
+11:23:17.870 11:23:17.870 Message to master: anchor=/tank/fsload: Created 19964 of 21760 files (91.75%)
+11:23:44.941 11:23:44.941 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:23:44.949 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:23:44.949 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:23:44.949 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:23:44.950 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:23:44.950 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:23:44.951 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:23:44.951 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:23:44.951 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:23:44.951 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:23:44.951 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:23:44.951 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:23:44.952 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:23:44.952 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:23:44.952 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:23:44.952 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:23:44.952 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:43 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:23:44.952 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:23:44.953 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:23:44.953 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:23:44.953 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:23:44.953 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:23:44.953 11:23:44.941 sendMessageToConsole: /var/adm/messages: Apr  5 11:23:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:23:44.953 11:23:44.941 sendMessageToConsole: 
+11:23:59.579 11:23:59.579 Message to master: anchor=/tank/fsload: Created 20615 of 21760 files (94.74%)
+11:24:44.747 11:24:44.746 Message to master: anchor=/tank/fsload: Created 21266 of 21760 files (97.73%)
+11:25:19.429 11:25:19.429 Message to master: anchor=/tank/fsload: Created 21700 of 21760 files (99.72%)
+11:25:24.798 11:25:24.797 Message to master: anchor=/tank/fsload create complete.
+11:25:25.798 11:25:25.798 
+11:25:25.798 11:25:25.798 Miscellaneous statistics:
+11:25:25.798 11:25:25.798 FILE_CREATES        Files created:                             21760
+11:25:25.799 11:25:25.798 DIRECTORY_CREATES   Directories created:                         340
+11:25:25.799 11:25:25.798 FILE_DELETES        Files deleted:                             21760
+11:25:25.799 11:25:25.798 DIRECTORY_DELETES   Directories deletes:                         340
+11:25:25.799 11:25:25.798 WRITE_OPENS         Files opened for write activity:           21760
+11:25:25.799 11:25:25.798 DIR_EXISTS          Directory may not exist (yet):                 6
+11:25:25.799 11:25:25.799 FILE_CLOSES         Close requests:                            21760
+11:25:25.799 11:25:25.799 
+11:25:25.799 11:25:25.799 Memory total Java heap:  123.875 MB; Free:   77.003 MB; Used:   46.872 MB;
+11:25:25.799 11:25:25.799 Maximum native memory allocation:      2097152; Current allocation:      2097152
+11:25:26.043 11:25:26.043 Writing control file for anchor=/tank/fsload at end of run.
+11:25:26.122 11:25:26.122 Completed control file for anchor=/tank/fsload at end of run.  dirs: 340/340 files: 21760/21760 sizes: 680g/680g/21760/680g
+11:25:26.123 11:25:26.122 End of run
+11:25:26.123 11:25:26.123 **********
+11:25:26.123 
+11:25:26.123 
+11:25:26.247 11:25:26.247 Beginning of run setup
+11:25:26.247 11:25:26.247 **********************
+11:25:26.248 
+11:25:26.248 
+11:25:26.261 11:25:26.261 createCompressionPattern() seed: 0 comp_ratio:   1.00 limit:   0.00
+11:25:26.304 11:25:26.304 Reading control file for anchor=/tank/fsload
+11:25:26.305 11:25:26.305 Completed reading control file.
+11:25:26.307 11:25:26.307 Completed the creation of the directory list: 340 directories
+11:25:26.308 11:25:26.308 Memory total Java heap:  123.875 MB; Free:   74.516 MB; Used:   49.359 MB;
+11:25:26.386 11:25:26.386 checkMemory()
+11:25:26.386 11:25:26.386 Memory total Java heap:  123.875 MB; Free:  110.557 MB; Used:   13.318 MB;
+11:25:26.386 11:25:26.386 VdbCount statistics for CheckMemory
+11:25:26.386 11:25:26.386 Java heap:  123.875 /  110.557 /   13.318
+11:25:26.387 11:25:26.387 Class                               added   cloned   serial   finals     left
+11:25:26.387 11:25:26.387 VdbObject.finalize() not active!
+11:25:26.405 11:25:26.405 Generated    21760 file names; total anchor size: 680g
+11:25:26.406 11:25:26.405 VdbCount statistics for initializeFileAnchor
+11:25:26.406 11:25:26.406 Java heap:  123.875 /  108.905 /   14.970
+11:25:26.406 11:25:26.406 Class                               added   cloned   serial   finals     left
+11:25:26.406 11:25:26.406 VdbObject.finalize() not active!
+11:25:26.406 11:25:26.406 Writing control file for anchor=/tank/fsload at start of run.
+11:25:26.449 11:25:26.449 Completed control file for anchor=/tank/fsload at start of run.  dirs: 340/340 files: 21760/21760 sizes: 680g/680g/0/0.0
+11:25:26.452 11:25:26.452 During anchor creation for anchor=/tank/fsload there were 340 directories and 21760 files
+11:25:26.452 11:25:26.452 Skew for fwd=fwd1,fsd=fsd1,operation=read:    100.0
+11:25:26.495 11:25:26.495 Started 32 threads for fwd=fwd1,fsd=fsd1,operation=read
+11:25:26.495 11:25:26.495 Started 32 FwgThreads
+11:25:26.495 11:25:26.495 Waiting for task synchronization
+11:25:26.495 11:25:26.495 task_wait_start_complete() end
+
+<a name="_17870600"></a><i><b>11:25:27.000 Starting RD=rd2; elapsed=1080000; fwdrate=max. For loops: None</b></i>
+
+11:25:27.001 11:25:27.001 task_run_all(): 33 tasks
+11:25:44.956 11:25:44.956 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:25:44.956 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:25:44.956 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:25:44.956 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:25:44.956 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:25:44.956 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:43 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:25:44.957 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:25:44.958 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:25:44.958 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:25:44.958 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:25:44.958 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:25:44.958 11:25:44.956 sendMessageToConsole: /var/adm/messages: Apr  5 11:25:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:25:44.958 11:25:44.956 sendMessageToConsole: 
+11:27:44.971 11:27:44.970 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:27:44.972 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:27:44.973 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:27:44.974 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:27:44.974 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:27:44.974 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:27:44.974 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:27:44.974 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:27:44.974 11:27:44.971 sendMessageToConsole: /var/adm/messages: Apr  5 11:27:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:27:44.974 11:27:44.971 sendMessageToConsole: 
+11:29:44.986 11:29:44.986 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:29:44.987 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:29:44.987 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:29:44.987 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:29:44.987 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:29:44.987 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:29:44.987 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:29:44.988 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:29:44.989 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:29:44.989 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:29:44.989 11:29:44.986 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:29:44.989 11:29:44.987 sendMessageToConsole: /var/adm/messages: Apr  5 11:29:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:29:44.989 11:29:44.987 sendMessageToConsole: 
+11:31:45.002 11:31:45.002 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:31:45.003 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:31:45.003 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:31:45.003 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:31:45.004 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:31:45.005 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:31:45.005 11:31:45.002 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:31:45.005 11:31:45.003 sendMessageToConsole: /var/adm/messages: Apr  5 11:31:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:31:45.005 11:31:45.003 sendMessageToConsole: 
+11:33:45.018 11:33:45.017 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:33:45.019 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:33:45.020 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:33:45.021 11:33:45.018 sendMessageToConsole: /var/adm/messages: Apr  5 11:33:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:33:45.021 11:33:45.018 sendMessageToConsole: 
+11:35:45.074 11:35:45.073 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:35:45.075 11:35:45.073 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:35:45.075 11:35:45.073 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:35:45.075 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:35:45.075 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:35:45.075 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:35:45.076 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:35:45.077 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:35:45.078 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:35:45.078 11:35:45.074 sendMessageToConsole: /var/adm/messages: Apr  5 11:35:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:35:45.078 11:35:45.074 sendMessageToConsole: 
+11:37:45.090 11:37:45.090 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:37:45.091 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:37:45.092 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:37:45.093 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:37:45.093 11:37:45.090 sendMessageToConsole: /var/adm/messages: Apr  5 11:37:44 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:37:45.093 11:37:45.090 sendMessageToConsole: 
+11:39:45.105 11:39:45.105 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:39:45.106 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:39:45.106 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:39:45.106 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:39:45.106 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:39:45.107 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:39:45.108 11:39:45.105 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:39:45.108 11:39:45.106 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:39:45.108 11:39:45.106 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:39:45.108 11:39:45.106 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:39:45.108 11:39:45.106 sendMessageToConsole: /var/adm/messages: Apr  5 11:39:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:39:45.108 11:39:45.106 sendMessageToConsole: 
+11:41:45.122 11:41:45.122 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:41:45.123 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:41:45.123 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:41:45.123 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:41:45.123 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:41:45.123 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:41:45.123 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:41:45.124 11:41:45.122 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:41:45.125 11:41:45.123 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:41:45.125 11:41:45.123 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:41:45.125 11:41:45.123 sendMessageToConsole: /var/adm/messages: Apr  5 11:41:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:41:45.125 11:41:45.123 sendMessageToConsole: 
+11:43:45.138 11:43:45.137 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:43:45.139 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:43:45.140 11:43:45.138 sendMessageToConsole: /var/adm/messages: Apr  5 11:43:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:43:45.141 11:43:45.138 sendMessageToConsole: 
+11:45:45.219 11:45:45.219 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:45:45.220 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:45:45.221 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:45:45.222 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:45:45.222 11:45:45.219 sendMessageToConsole: /var/adm/messages: Apr  5 11:45:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:45:45.222 11:45:45.219 sendMessageToConsole: 
+11:47:45.234 11:47:45.234 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:47:45.235 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:47:45.235 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:47:45.235 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:47:45.236 11:47:45.234 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:47:45.236 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:47:45.236 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:47:45.236 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:47:45.236 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:47:45.237 11:47:45.235 sendMessageToConsole: /var/adm/messages: Apr  5 11:47:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:47:45.237 11:47:45.235 sendMessageToConsole: 
+11:49:45.251 11:49:45.250 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:49:45.251 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:49:45.251 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:49:45.252 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:49:45.253 11:49:45.250 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:49:45.253 11:49:45.251 sendMessageToConsole: /var/adm/messages: Apr  5 11:49:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:49:45.253 11:49:45.251 sendMessageToConsole: 
+11:51:45.266 11:51:45.266 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:51:45.267 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:51:45.268 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:51:45.269 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:51:45.269 11:51:45.266 sendMessageToConsole: /var/adm/messages: Apr  5 11:51:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:51:45.269 11:51:45.266 sendMessageToConsole: 
+11:53:45.331 11:53:45.331 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb scsi: [ID 583861 kern.info] smp0 at mpt_sas1: target-port w500062b10003e5ff
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb genunix: [ID 936769 kern.info] smp0 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500062b10003e5ff
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb scsi: [ID 583861 kern.info] smp2 at mpt_sas1: target-port w5003048001ac97ff
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb genunix: [ID 936769 kern.info] smp2 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ac97ff
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb scsi: [ID 583861 kern.info] smp3 at mpt_sas1: target-port w500163600053cf7f
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb genunix: [ID 936769 kern.info] smp3 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w500163600053cf7f
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb scsi: [ID 583861 kern.info] smp1 at mpt_sas1: target-port w5003048001ab017f
+11:53:45.336 11:53:45.331 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb genunix: [ID 936769 kern.info] smp1 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w5003048001ab017f
+11:53:45.336 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb pseudo: [ID 129642 kern.info] pseudo-device: devinfo0
+11:53:45.336 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:43 nodeb genunix: [ID 936769 kern.info] devinfo0 is /pseudo/devinfo@0
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb scsi: [ID 583861 kern.info] smp4 at mpt_sas1: target-port w50016360007efd7f
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb genunix: [ID 936769 kern.info] smp4 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f/smp@w50016360007efd7f
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb scsi: [ID 583861 kern.info] smp5 at mpt_sas2: target-port w500062b1000420ff
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb genunix: [ID 936769 kern.info] smp5 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500062b1000420ff
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb scsi: [ID 583861 kern.info] smp6 at mpt_sas2: target-port w5003048001ab01ff
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb genunix: [ID 936769 kern.info] smp6 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ab01ff
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb scsi: [ID 583861 kern.info] smp7 at mpt_sas2: target-port w5003048001ac977f
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:44 nodeb genunix: [ID 936769 kern.info] smp7 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w5003048001ac977f
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:45 nodeb scsi: [ID 583861 kern.info] smp9 at mpt_sas2: target-port w500163600053d93f
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:45 nodeb genunix: [ID 936769 kern.info] smp9 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053d93f
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:45 nodeb scsi: [ID 583861 kern.info] smp8 at mpt_sas2: target-port w500163600053e9ff
+11:53:45.337 11:53:45.332 sendMessageToConsole: /var/adm/messages: Apr  5 11:53:45 nodeb genunix: [ID 936769 kern.info] smp8 is /pci@0,0/pci8086,3c04@2/pci1000,3000@0/iport@f0/smp@w500163600053e9ff
+11:53:45.337 11:53:45.332 sendMessageToConsole: 
